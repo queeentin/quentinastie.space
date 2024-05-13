@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(#2f1862, #6847ae);
+}
+body #root > header {
+  color: white;
+}
+body #root > header a {
+  color: white !important;
+}
+body #root > header body #root footer a {
+  border: 1px solid white;
+}
+body #root > header .icons img {
+  filter: invert(100%);
+}
+body #root > header .icons li:nth-child(4) {
+  opacity: 1 !important;
+}
+body #root > footer a {
+  color: white;
+  border: 1px solid white;
+}/*# sourceMappingURL=night.css.map */

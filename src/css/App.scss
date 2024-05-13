@@ -1,0 +1,250 @@
+@import "Ductus.css";
+
+body{
+    font-family: "Ductus Regular";
+    // background: linear-gradient(180deg, #FFC0F9 0%, #FFF 100%);
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    a{
+        color: black;
+    }
+
+    .gutter{
+        flex:1;
+    }
+
+    #root{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+        padding: 1em;
+        box-sizing: border-box;
+        
+        header{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+
+            h1{
+                flex: 1;
+                font-size: 1em;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            h4{
+                flex: 1;
+                font-size: 0.5em;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            > div{
+                flex: 3;
+                display: flex;
+                gap: 3rem;
+
+                #controls{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3em;
+
+                    div{
+                        display: flex;
+                        flex-direction: row;
+
+                        ul{
+                            flex: 2;
+                            margin: 0;
+                            padding: 0;
+
+                            li{
+                                list-style-type: none;
+                                opacity: 0.4;
+                                cursor: pointer;
+                            }
+                            li.active{
+                                opacity: 1;
+                            }
+                        }
+
+                        .icons{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 2rem;
+                            flex-wrap: wrap;
+
+                            li{
+
+                                img{
+                                    height: 1.5em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #resume{
+                    flex: 2;
+                    display: flex;
+
+                    div{
+                        flex: 7;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer{
+            display: flex;
+            gap: 1em;
+
+            a{
+                color: black;
+                text-decoration: none;
+                border: 1px solid black;
+                padding: 0.2em 2em;
+                border-radius: 200px;        
+            }
+
+            a:hover{
+                filter: blur(2px);
+            }
+        }
+
+        #content{
+            position: absolute;
+            left: 0;
+            top: 10vh;
+            height: 90vh;
+            overflow: hidden;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            border-radius: 20px 20px 0 0;
+
+            .scroller{
+                height: 100%;
+                overflow-y: scroll;
+                scrollbar-color: black transparent;
+                padding: 1em;
+                box-sizing: border-box;
+
+                > div{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 3rem;
+
+                    dl{
+                        display: flex;
+                        margin: 0;
+
+                        dt{
+                            flex: 1;
+                            font-size: 0.5em;
+                        }
+
+                        dd{
+                            margin: 0;
+                            flex: 2;
+
+                            a{
+                                display: block;
+                            }
+                        }
+                    }
+
+                    header{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+                        position: sticky;
+                        top: 0;
+
+                        #close{
+                            width: 100%;
+                            display: block;
+                            background-color: #e6e6e6;
+                            text-decoration: none;
+                            text-align: center;
+                            border-radius: 200px;
+                        }
+                        
+                        #close:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+
+                    main{
+                        flex: 3;
+
+                        .infos{
+                            display: flex;
+                            margin-bottom: 2rem;
+                            gap: 3rem;
+            
+                            .col-1{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1em;
+                                flex: 1;
+                            }
+            
+                            .col-2{
+                                flex: 2;
+
+                                dd{
+                                    flex: 7;
+                                }
+                            }
+
+                        }
+
+                        .images{
+                            grid-template-columns: repeat(2, 1fr);
+                            display: grid;
+                            grid-auto-rows: min-content;
+                            grid-gap: 1em;
+
+                            figure{
+                                margin: 0;
+                                background-color: lightgrey;
+                                border-radius: 20px;
+                                overflow: hidden;
+
+                                > *{
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+
+                            .solo{
+                                grid-column: span 2;
+                            }
+                            
+                            .duo{
+                                grid-column: span 1;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

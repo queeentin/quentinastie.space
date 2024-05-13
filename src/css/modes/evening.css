@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(to top, #D88B19, #132758);
+}
+body #root > header {
+  color: white;
+}
+body #root > header a {
+  color: white !important;
+}
+body #root > header body #root footer a {
+  border: 1px solid white;
+}
+body #root > header .icons img {
+  filter: invert(100%);
+}
+body #root > header .icons li:nth-child(3) {
+  opacity: 1 !important;
+}/*# sourceMappingURL=evening.css.map */

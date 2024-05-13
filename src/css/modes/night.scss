@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(#2f1862, #6847ae);
+
+    #root{ 
+        > header{
+            color: white;
+
+            a{
+                color: white !important;
+            }
+
+            body #root footer a {
+                border: 1px solid white;
+            }
+
+            .icons{
+                img{
+                    filter: invert(100%);
+                }
+            }
+
+            .icons{
+                li:nth-child(4){
+                    opacity: 1 !important;
+                }
+            }
+        }
+        > footer{
+            a{
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+}

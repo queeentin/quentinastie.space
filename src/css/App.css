@@ -1,0 +1,204 @@
+@import "Ductus.css";
+body {
+  font-family: "Ductus Regular";
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body a {
+  color: black;
+}
+body .gutter {
+  flex: 1;
+}
+body #root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+body #root header {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+body #root header h1 {
+  flex: 1;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+body #root header h4 {
+  flex: 1;
+  font-size: 0.5em;
+  font-weight: normal;
+  margin: 0;
+}
+body #root header > div {
+  flex: 3;
+  display: flex;
+  gap: 3rem;
+}
+body #root header > div #controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+body #root header > div #controls div {
+  display: flex;
+  flex-direction: row;
+}
+body #root header > div #controls div ul {
+  flex: 2;
+  margin: 0;
+  padding: 0;
+}
+body #root header > div #controls div ul li {
+  list-style-type: none;
+  opacity: 0.4;
+  cursor: pointer;
+}
+body #root header > div #controls div ul li.active {
+  opacity: 1;
+}
+body #root header > div #controls div .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+body #root header > div #controls div .icons li img {
+  height: 1.5em;
+}
+body #root header > div #resume {
+  flex: 2;
+  display: flex;
+}
+body #root header > div #resume div {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body #root header > div #resume div p {
+  margin: 0;
+}
+body #root footer {
+  display: flex;
+  gap: 1em;
+}
+body #root footer a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 0.2em 2em;
+  border-radius: 200px;
+}
+body #root footer a:hover {
+  filter: blur(2px);
+}
+body #root #content {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  height: 90vh;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px 20px 0 0;
+}
+body #root #content .scroller {
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-color: black transparent;
+  padding: 1em;
+  box-sizing: border-box;
+}
+body #root #content .scroller > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+body #root #content .scroller > div dl {
+  display: flex;
+  margin: 0;
+}
+body #root #content .scroller > div dl dt {
+  flex: 1;
+  font-size: 0.5em;
+}
+body #root #content .scroller > div dl dd {
+  margin: 0;
+  flex: 2;
+}
+body #root #content .scroller > div dl dd a {
+  display: block;
+}
+body #root #content .scroller > div header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: sticky;
+  top: 0;
+}
+body #root #content .scroller > div header #close {
+  width: 100%;
+  display: block;
+  background-color: #e6e6e6;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 200px;
+}
+body #root #content .scroller > div header #close:hover {
+  background-color: black;
+  color: white;
+}
+body #root #content .scroller > div main {
+  flex: 3;
+}
+body #root #content .scroller > div main .infos {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 3rem;
+}
+body #root #content .scroller > div main .infos .col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex: 1;
+}
+body #root #content .scroller > div main .infos .col-2 {
+  flex: 2;
+}
+body #root #content .scroller > div main .infos .col-2 dd {
+  flex: 7;
+}
+body #root #content .scroller > div main .images {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 1em;
+}
+body #root #content .scroller > div main .images figure {
+  margin: 0;
+  background-color: lightgrey;
+  border-radius: 20px;
+  overflow: hidden;
+}
+body #root #content .scroller > div main .images figure > * {
+  display: block;
+  width: 100%;
+}
+body #root #content .scroller > div main .images .solo {
+  grid-column: span 2;
+}
+body #root #content .scroller > div main .images .duo {
+  grid-column: span 1;
+}/*# sourceMappingURL=App.css.map */

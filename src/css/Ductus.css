@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Ductus Regular";
+    src: url("./ductus/regular/DuctusRegular.woff2") format("woff2"),
+        url("./ductus/regular/DuctusRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ductus Geometric";
+    src: url("./ductus/regular/DuctusGeometric.woff2") format("woff2"),
+        url("./ductus/regular/DuctusGeometric.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ductus Calligraphic";
+    src: url("./ductus/regular/DuctusCalligraphic.woff2") format("woff2"),
+        url("./ductus/regular/DuctusCalligraphic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ductus Regular Mono";
+    src: url("./ductus/monospace/DuctusMonoRegular.woff2") format("woff2"),
+        url("./ductus/monospace/DuctusMonoRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ductus Geometric Mono";
+    src: url("./ductus/monospace/DuctusMonoGeometric.woff2") format("woff2"),
+        url("./ductus/monospace/DuctusMonoGeometric.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ductus Calligraphic Mono";
+    src: url("./ductus/monospace/DuctusMonoCalligraphic.woff2") format("woff2"),
+        url("./ductus/monospace/DuctusMonoCalligraphic.woff") format("woff");
+}
+
+/* FONT-SIZES */
+
+/* X-Small screens */
+@media (max-width: 576px){
+
+    .xs-font{
+        font-size: 9px;
+    }
+
+    .s-font{
+        font-size: 16px;
+    }
+
+    .m-font{
+        font-size: 16px;
+    }
+
+}
+
+/* Small screens */
+@media (min-width: 576px) and (max-width: 768px){
+
+    .xs-font{
+        font-size: 9px;
+    }
+
+    .s-font{
+        font-size: 16px;
+    }
+
+    .m-font{
+        font-size: 16px;
+    }
+
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 992px){
+
+    .xs-font{
+        font-size: 9px;
+    }
+
+    .s-font{
+        font-size: 16px;
+    }
+
+    .m-font{
+        font-size: 16px;
+    }
+
+}
+
+/* Large screens */
+@media (min-width: 992px) and (max-width: 1200px){
+
+    .xs-font{
+        font-size: 10px;
+    }
+
+    .s-font{
+        font-size: 10px;
+    }
+
+    .m-font{
+        font-size: 18px;
+    }
+
+}
+
+/* XLarge screens */
+@media (min-width: 1200px) and (max-width: 1400px){
+
+    .xs-font{
+        font-size: 12px;
+    }
+
+    .s-font{
+        font-size: 12px;
+    }
+
+    .m-font{
+        font-size: 20px;
+    }
+
+}
+
+/* XXLarge screens */
+@media (min-width: 1400px){
+
+    .xs-font{
+        font-size: 13px;
+    }
+
+    .s-font{
+        font-size: 13px;
+    }
+
+    .m-font{
+        font-size: 22px;
+    }
+
+}

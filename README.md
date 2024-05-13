@@ -1,3 +1,3 @@
 # Site web de Quentin Astié
 
-Portfolio de projets
+Portfolio présentant les récents projets en design en graphique.

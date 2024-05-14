@@ -74,5 +74,22 @@ export const projects = [
             {"source" : "rectangle-4.png", "display" : "solo"},
             {"source" : "06.mp4", "display" : "solo"}
         ]
+    },
+    {
+        "id": "club-celest",
+        "title": "Club Célest",
+        "date": "2024",
+        "for": "Club Célest",
+        "with": [
+            { "name": "Pedro Cardoso",
+            "link": "https://pedrocardoso.fr/"}
+        ],
+        "informations": "Blablabla",
+        "category": "Typographie",
+        "images": [
+            {"source" : "club-celeste-1080-2.mp4", "display" : "duo"},
+            {"source" : "club-celeste-1080.mp4", "display" : "duo"},
+            {"source" : "club-celeste-2400-v2.mp4", "display" : "solo"}
+        ]
     }
 ];

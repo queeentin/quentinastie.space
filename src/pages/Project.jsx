@@ -31,25 +31,42 @@ export function Project() {
         >
             <div className="scroller">
                 <div>
+                    <NavLink className="close" to="/">fermer</NavLink>
                     <header>
-                        <NavLink id="close" to="/">fermer</NavLink>
-                        <dl>
+                        <NavLink className="close" to="/">fermer</NavLink>
+                        <dl className="gutter">
                             <dt>Projet</dt>
                             <dd>{project.title}</dd>
                         </dl>
-                        <dl>
+                        <dl className="gutter">
                             <dt>Année</dt>
                             <dd>{project.date}</dd>
                         </dl>
+                        {/* <dl className="gutter sm-screen">
+                            <dt>Pour</dt>
+                            <dd>{project.for}</dd>
+                        </dl>
+                        <dl className="gutter sm-screen">
+                            <dt>Avec</dt>
+                            <dd>
+                                {project.with.map((value, index) => {
+                                    return <a key={index} href={value["link"]}>{value["name"]}</a>
+                                })}
+                            </dd>
+                        </dl>
+                        <dl className="gutter sm-screen">
+                            <dt>Catégorie</dt>
+                            <dd>{project.category}</dd>
+                        </dl> */}
                     </header>
                     <main>
                         <div className="infos">
                             <div className="col-1">
-                                <dl>
+                                <dl className="gutter">
                                     <dt>Pour</dt>
                                     <dd>{project.for}</dd>
                                 </dl>
-                                <dl>
+                                <dl className="gutter">
                                     <dt>Avec</dt>
                                     <dd>
                                         {project.with.map((value, index) => {
@@ -57,13 +74,13 @@ export function Project() {
                                         })}
                                     </dd>
                                 </dl>
-                                <dl>
+                                <dl className="gutter">
                                     <dt>Catégorie</dt>
                                     <dd>{project.category}</dd>
                                 </dl>
                             </div>
                             <div className="col-2">
-                                <dl>
+                                <dl className="gutter">
                                     <dt>Informations projet</dt>
                                     <dd>{project.informations}</dd>
                                 </dl>

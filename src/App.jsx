@@ -7,10 +7,12 @@ import "./css/modes/evening.css";
 import "./css/modes/night.css";
 import "./css/modes/rainbow.css";
 import { Footer } from "./pages/Footer.jsx";
+import { Icon } from "./pages/Icon.jsx";
 
 function App() {
   return (
     <>
+      <Icon />
       <Home />
       <Footer />
       <AnimatedRoute />

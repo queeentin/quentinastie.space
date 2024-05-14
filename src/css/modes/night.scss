@@ -9,10 +9,6 @@ body{
                 color: white !important;
             }
 
-            body #root footer a {
-                border: 1px solid white;
-            }
-
             .icons{
                 img{
                     filter: invert(100%);
@@ -23,12 +19,6 @@ body{
                 li:nth-child(4){
                     opacity: 1 !important;
                 }
-            }
-        }
-        > footer{
-            a{
-                color: white;
-                border: 1px solid white;
             }
         }
     }

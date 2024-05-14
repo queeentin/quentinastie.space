@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { projects } from "../content/projects";
 
 export function Footer() {
-    const iconImg = document.getElementById("iconImg");
 
+    useEffect(() => {
+        const iconImg = document.getElementById("iconImg");
+    }, []);
+    
     function displayIcon(event){
-        var myClass = event.currentTarget.className;
-        var newSrc = "./images/" + myClass + "/icon.svg";
+        const myClass = event.currentTarget.className;
+        const newSrc = "./images/" + myClass + "/icon.svg";
         iconImg.src = newSrc;
     }
 
@@ -20,7 +23,11 @@ export function Footer() {
             <div id="links">
                 {projects.map((value, index) => {
                     return (
-                        <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} to={"/"+value["id"]}>
+                        // <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} to={"/"+value["id"]}>
+                        //     <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
+                        //     <p>{value["title"]}</p>
+                        // </NavLink>
+                        <NavLink key={index} className={value["id"]} to={"/"+value["id"]}>
                             <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
                             <p>{value["title"]}</p>
                         </NavLink>

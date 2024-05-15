@@ -10,7 +10,8 @@ export function Footer() {
     
     function displayIcon(event){
         const myClass = event.currentTarget.className;
-        const newSrc = "./images/" + myClass + "/icon.svg";
+        const fileName = event.currentTarget.getAttribute("data-ext");
+        const newSrc = "./images/" + myClass + "/" + fileName;
         iconImg.src = newSrc;
     }
 
@@ -23,8 +24,8 @@ export function Footer() {
             <div id="links">
                 {projects.map((value, index) => {
                     return (
-                        <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} to={"/"+value["id"]}>
-                            <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
+                        <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} data-ext={value["icon"]} to={"/"+value["id"]}>
+                            <figure><img src={"./images/" + value["id"] + "/" + value["icon"]}></img></figure>
                             <p>{value["title"]}</p>
                         </NavLink>
                         // <NavLink key={index} className={value["id"]} to={"/"+value["id"]}>

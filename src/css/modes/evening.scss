@@ -28,6 +28,7 @@ body{
         }
 
         > figure{
+            mix-blend-mode: screen !important;
             img{
                 filter: invert(100%);
             }

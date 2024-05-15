@@ -250,6 +250,7 @@ body #root #icon {
   transform: translate(-50%, -50%);
   margin: 0;
   z-index: -10;
+  mix-blend-mode: multiply;
 }
 body #root #icon img {
   height: 60vh;

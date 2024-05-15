@@ -79,6 +79,7 @@ export function Clock() {
     function addNewstyles() {
         var color1 = getRandomColor();
         var color2 = getRandomColor();
+        var color3 = getRandomColor();
         const newStyles = "body {--bg-color: " + color1 + "; --font-color: " + color2 + ";}";
         const feuilleDeStyle = document.styleSheets[5];
         feuilleDeStyle.insertRule(newStyles, feuilleDeStyle.cssRules.length);    

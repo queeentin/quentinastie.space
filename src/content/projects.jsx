@@ -23,7 +23,8 @@ export const projects = [
             {"source" : "rectangle-3.png", "display" : "solo"},
             {"source" : "rectangle-4.png", "display" : "solo"},
             {"source" : "03.mp4", "display" : "solo"}
-        ]
+        ],
+        "icon" : "icon.svg"
     },
     {
         "id": "frac-artotheque-site",
@@ -47,7 +48,8 @@ export const projects = [
             {"source" : "emprunt-frac-arto-1080.mp4", "display" : "duo"},
             {"source" : "rectangle3.1.png", "display" : "solo"},
             {"source" : "rectangle-4.png", "display" : "solo"}
-        ]
+        ],
+        "icon" : "icon.svg"
     },
     {
         "id": "paul-dagorne",
@@ -73,7 +75,8 @@ export const projects = [
             {"source" : "rectangle-3.png", "display" : "solo"},
             {"source" : "rectangle-4.png", "display" : "solo"},
             {"source" : "06.mp4", "display" : "solo"}
-        ]
+        ],
+        "icon" : "icon.svg"
     },
     {
         "id": "club-celest",
@@ -92,7 +95,8 @@ export const projects = [
             {"source" : "club-celeste-2400-v2.mp4", "display" : "solo"},
             {"source" : "animation.mp4", "display" : "duo"},
             {"source" : "animation.mp4", "display" : "duo"}
-        ]
+        ],
+        "icon" : "icon.svg"
     },
     {
         "id": "ecume-studio",
@@ -116,7 +120,8 @@ export const projects = [
             {"source" : "double-tel-bis.mp4", "display" : "duo"},
             {"source" : "es-rectangle3.png", "display" : "solo"},
             {"source" : "es-rectangle4.png", "display" : "solo"}
-        ]
+        ],
+        "icon" : "icon.svg"
     },
     {
         "id": "frac-videos",
@@ -144,6 +149,7 @@ export const projects = [
             {"source" : "rs-carre-1.png", "display" : "duo"},
             {"source" : "rs-carre.png", "display" : "duo"},
             {"source" : "rs-paysage.png", "display" : "solo"}
-        ]
+        ],
+        "icon" : "icon.png"
     },
 ];

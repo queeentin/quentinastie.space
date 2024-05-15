@@ -16,6 +16,9 @@ body #root > header .icons svg {
 body #root > header .icons li:nth-child(3) {
   opacity: 1 !important;
 }
+body #root > figure {
+  mix-blend-mode: screen !important;
+}
 body #root > figure img {
   filter: invert(100%);
 }/*# sourceMappingURL=evening.css.map */

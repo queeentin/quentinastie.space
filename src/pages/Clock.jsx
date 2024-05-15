@@ -88,11 +88,11 @@ export function Clock() {
     <div className="gutter">
         <h4>{time.toLocaleTimeString()}</h4>
         <ul className="icons">
-            <li onClick={() => changeMode("morning")}><img src="./icons/icon_morning.svg" data-number="1" alt="morning"/></li>
-            <li onClick={() => changeMode("afternoon")}><img src="./icons/icon_afternoon.svg" data-number="2" alt="afternoon"/></li>
-            <li onClick={() => changeMode("evening")}><img src="./icons/icon_evening.svg" data-number="3" alt="evening"/></li>
-            <li onClick={() => changeMode("night")}><img src="./icons/icon_night.svg" data-number="4" alt="night"/></li>
-            <li onClick={() => {changeMode("rainbow"); addNewstyles();}}><img src="./icons/icon_rainbow.svg" data-number="5" alt="rainbow" id="rainbow"/></li>
+            <li onClick={() => changeMode("morning")}><svg><use xlinkHref="./icons/icon_morning.svg#morning"></use></svg></li>
+            <li onClick={() => changeMode("afternoon")}><svg><use xlinkHref="./icons/icon_afternoon.svg#afternoon"></use></svg></li>
+            <li onClick={() => changeMode("evening")}><svg><use xlinkHref="./icons/icon_evening.svg#evening"></use></svg></li>
+            <li onClick={() => changeMode("night")}><svg><use xlinkHref="./icons/icon_night.svg#night"></use></svg></li>
+            <li onClick={() => {changeMode("rainbow"); addNewstyles();}}><svg><use xlinkHref="./icons/icon_rainbow.svg#rainbow"></use></svg></li>
         </ul>
     </div>
     );

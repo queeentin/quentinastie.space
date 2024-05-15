@@ -15,8 +15,8 @@ body{
 
     .icons{
         li{
-            img{
-                background-color: var(--font-color);
+            svg{
+                stroke: var(--font-color) !important;
             }
         }
     }

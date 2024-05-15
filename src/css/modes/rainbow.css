@@ -12,6 +12,6 @@ body {
 #root > header a {
   color: var(--font-color);
 }
-#root > header .icons li img {
-  background-color: var(--font-color);
+#root > header .icons li svg {
+  stroke: var(--font-color) !important;
 }/*# sourceMappingURL=rainbow.css.map */

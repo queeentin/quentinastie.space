@@ -67,6 +67,23 @@ export function Clock() {
         }
     };
 
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function addNewstyles() {
+        var color1 = getRandomColor();
+        var color2 = getRandomColor();
+        const newStyles = "body {--bg-color: " + color1 + "; --font-color: " + color2 + ";}";
+        const feuilleDeStyle = document.styleSheets[5];
+        feuilleDeStyle.insertRule(newStyles, feuilleDeStyle.cssRules.length);    
+    }
+
     return (
     <div className="gutter">
         <h4>{time.toLocaleTimeString()}</h4>
@@ -75,7 +92,7 @@ export function Clock() {
             <li onClick={() => changeMode("afternoon")}><img src="./icons/icon_afternoon.svg" data-number="2" alt="afternoon"/></li>
             <li onClick={() => changeMode("evening")}><img src="./icons/icon_evening.svg" data-number="3" alt="evening"/></li>
             <li onClick={() => changeMode("night")}><img src="./icons/icon_night.svg" data-number="4" alt="night"/></li>
-            <li onClick={() => changeMode("rainbow")}><img src="./icons/icon_rainbow.svg" data-number="5" alt="rainbow"/></li>
+            <li onClick={() => {changeMode("rainbow"); addNewstyles();}}><img src="./icons/icon_rainbow.svg" data-number="5" alt="rainbow" id="rainbow"/></li>
         </ul>
     </div>
     );

@@ -27,5 +27,11 @@ body{
             }
         }
 
+        > figure{
+            img{
+                filter: invert(100%);
+            }
+        }
+
     }
 }

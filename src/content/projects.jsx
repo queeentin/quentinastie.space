@@ -89,7 +89,9 @@ export const projects = [
         "images": [
             {"source" : "club-celeste-1080-2.mp4", "display" : "duo"},
             {"source" : "club-celeste-1080.mp4", "display" : "duo"},
-            {"source" : "club-celeste-2400-v2.mp4", "display" : "solo"}
+            {"source" : "club-celeste-2400-v2.mp4", "display" : "solo"},
+            {"source" : "animation.mp4", "display" : "duo"},
+            {"source" : "animation.mp4", "display" : "duo"}
         ]
     }
 ];

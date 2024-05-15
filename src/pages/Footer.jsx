@@ -17,20 +17,20 @@ export function Footer() {
     function clearImageSrc(){
         iconImg.src = "";
     }
-
+    
     return (
         <footer>
             <div id="links">
                 {projects.map((value, index) => {
                     return (
-                        // <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} to={"/"+value["id"]}>
-                        //     <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
-                        //     <p>{value["title"]}</p>
-                        // </NavLink>
-                        <NavLink key={index} className={value["id"]} to={"/"+value["id"]}>
+                        <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} to={"/"+value["id"]}>
                             <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
                             <p>{value["title"]}</p>
                         </NavLink>
+                        // <NavLink key={index} className={value["id"]} to={"/"+value["id"]}>
+                        //     <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
+                        //     <p>{value["title"]}</p>
+                        // </NavLink>
                     );
                 })}
             </div>

@@ -93,5 +93,57 @@ export const projects = [
             {"source" : "animation.mp4", "display" : "duo"},
             {"source" : "animation.mp4", "display" : "duo"}
         ]
-    }
+    },
+    {
+        "id": "ecume-studio",
+        "title": "Écume Studio",
+        "date": "2023",
+        "for": "Écume Studio",
+        "with": [
+            { "name": "Pedro Cardoso",
+            "link": "https://pedrocardoso.fr/"}
+        ],
+        "informations": "Blablabla",
+        "category": "Site web",
+        "images": [
+            {"source" : "ordi-tel-2400.mp4", "display" : "solo"},
+            {"source" : "ordi-seul.mp4", "display" : "solo"},
+            {"source" : "es-carre1.png", "display" : "duo"},
+            {"source" : "es-carre2.png", "display" : "duo"},
+            {"source" : "ordi-tel-same_1.mp4", "display" : "solo"},
+            {"source" : "es-rectangle2.png", "display" : "solo"},
+            {"source" : "home-page.mp4", "display" : "duo"},
+            {"source" : "double-tel-bis.mp4", "display" : "duo"},
+            {"source" : "es-rectangle3.png", "display" : "solo"},
+            {"source" : "es-rectangle4.png", "display" : "solo"}
+        ]
+    },
+    {
+        "id": "frac-videos",
+        "title": "Frac Vidéos",
+        "date": "2023",
+        "for": "Frac",
+        "with": [
+            { "name": "Pedro Cardoso",
+            "link": "https://pedrocardoso.fr/"}
+        ],
+        "informations": "Blablabla",
+        "category": "Site web",
+        "images": [
+            {"source" : "web-1080-mockups-mobiles.mp4", "display" : "duo"},
+            {"source" : "web-1080-mockups-mobiles-2.mp4", "display" : "duo"},
+            {"source" : "web-1920-all-over-mobiles 2_1.mp4", "display" : "solo"},
+            {"source" : "web-1080-all-over-1.mp4", "display" : "duo"},
+            {"source" : "web-1080-all-over-2.mp4", "display" : "duo"},
+            {"source" : "web-1920-tryptique-horizontal.mp4", "display" : "solo"},
+            {"source" : "web-1080-mobile-seul-2_2.mp4", "display" : "duo"},
+            {"source" : "web-1080-mobile-seul.mp4", "display" : "duo"},
+            {"source" : "web-1080-paysage-1.mp4", "display" : "duo"},
+            {"source" : "web-1080-paysage-2.mp4", "display" : "duo"},
+            {"source" : "web-1920-all-over-2.mp4", "display" : "solo"},
+            {"source" : "rs-carre-1.png", "display" : "duo"},
+            {"source" : "rs-carre.png", "display" : "duo"},
+            {"source" : "rs-paysage.png", "display" : "solo"}
+        ]
+    },
 ];

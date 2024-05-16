@@ -86,7 +86,7 @@ export function Clock() {
     }
 
     return (
-    <div className="gutter">
+    <div id="clock">
         <h4>{time.toLocaleTimeString()}</h4>
         <ul className="icons">
             <li onClick={() => changeMode("morning")}><svg><use xlinkHref="./icons/icon_morning.svg#morning"></use></svg></li>

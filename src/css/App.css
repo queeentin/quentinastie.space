@@ -1,6 +1,7 @@
 @import "Ductus.css";
 body {
   font-family: "Ductus Regular";
+  background: linear-gradient(180deg, #FFC0F9 0%, #FFF 100%);
   height: 100vh;
   margin: 0;
   box-sizing: border-box;
@@ -20,81 +21,74 @@ body #root {
   overflow: auto;
   box-sizing: border-box;
 }
-body #root > header {
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
+body #root header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1em 4em;
   margin: 1em;
 }
-body #root > header h1 {
+body #root header > div {
+  display: flex;
+  align-items: flex-start;
+}
+body #root header > div > h4 {
+  flex: 1;
+}
+body #root header > div > ul {
+  flex: 2;
+}
+body #root header #name {
+  grid-area: 1/1/2/2;
+}
+body #root header #name h1 {
   flex: 1;
   font-size: 1em;
   font-weight: normal;
   margin: 0;
 }
-body #root > header h4 {
-  flex: 1;
+body #root header #clock {
+  grid-area: 2/1/3/2;
+}
+body #root header #clock ul {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+body #root header #lang {
+  grid-area: 1/2/2/3;
+}
+body #root header #contact {
+  grid-area: 2/2/3/3;
+}
+body #root header #resume {
+  grid-area: 1/3/4/5;
+}
+body #root header #resume > div {
+  flex: 5;
+}
+body #root header h4 {
   font-size: 0.5em;
   font-weight: normal;
   margin: 0;
 }
-body #root > header > div {
-  flex: 3;
-  display: flex;
-  gap: 3em;
-}
-body #root > header > div #controls {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-}
-body #root > header > div #controls div {
-  display: flex;
-  flex-direction: row;
-}
-body #root > header > div #controls div ul {
-  flex: 2;
+body #root header ul {
   margin: 0;
   padding: 0;
 }
-body #root > header > div #controls div ul li {
+body #root header ul li {
   list-style-type: none;
-  opacity: 0.4;
-  cursor: pointer;
 }
-body #root > header > div #controls div ul li.active {
-  opacity: 1;
+body #root header p {
+  margin: 0;
 }
-body #root > header > div #controls div .icons {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5em;
-  flex-wrap: wrap;
-}
-body #root > header > div #controls div .icons li img {
-  height: 1.5em;
-}
-body #root > header > div #controls div .icons li svg {
+body #root header svg {
   height: 1.5em;
   width: 1.5em;
   fill: none;
   stroke: #000;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-body #root > header > div #resume {
-  flex: 2;
-  display: flex;
-}
-body #root > header > div #resume div {
-  flex: 7;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-body #root > header > div #resume div p {
-  margin: 0;
 }
 body #root footer #links {
   display: flex;
@@ -258,7 +252,17 @@ body #root #icon img {
 
 @media (max-width: 768px) {
   body #root header {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  body #root header #clock {
+    grid-area: 1/2/2/3;
+  }
+  body #root header #lang {
+    grid-area: 2/1/2/2;
+  }
+  body #root header #resume {
+    grid-area: 3/1/4/3;
   }
   body #root footer {
     position: sticky;
@@ -292,6 +296,16 @@ body #root #icon img {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  body #root header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  body #root header #contact {
+    grid-area: 1/3/2/4;
+  }
+  body #root header #resume {
+    grid-area: 2/2/3/4;
+  }
   body #root #content .scroller > div {
     flex-direction: column;
     gap: 1em;
@@ -323,17 +337,6 @@ body #root #icon img {
   }
   body #root #content .scroller > div main .infos .col-1 dl {
     flex-basis: 50%;
-  }
-}
-@media (max-width: 992px) {
-  body #root header > div {
-    flex-direction: column;
-  }
-  body #root header > div #controls {
-    flex-direction: row;
-  }
-  body #root header > div #controls > div {
-    flex: 1;
   }
 }
 @media (min-width: 992px) {

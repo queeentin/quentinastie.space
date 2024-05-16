@@ -2,7 +2,7 @@
 
 body{
     font-family: "Ductus Regular";
-    // background: linear-gradient(180deg, #FFC0F9 0%, #FFF 100%);
+    background: linear-gradient(180deg, #FFC0F9 0%, #FFF 100%);
     height: 100vh;
     margin: 0;
     box-sizing: border-box;
@@ -24,95 +24,91 @@ body{
         overflow: auto;
         box-sizing: border-box;
         
-        > header{
-            display: flex;
-            flex-direction: row;
-            gap: 3em;
+        header{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-gap: 1em 4em;
             margin: 1em;
 
-            h1{
-                flex: 1;
-                font-size: 1em;
-                font-weight: normal;
-                margin: 0;
+            > div{
+                display: flex;
+                align-items: flex-start;
+
+                > h4{
+                    flex: 1;
+                }
+
+                > ul{
+                    flex: 2;
+                }
+            }
+
+            #name{
+                grid-area: 1/1/2/2;
+
+                h1{
+                    flex: 1;
+                    font-size: 1em;
+                    font-weight: normal;
+                    margin: 0;
+                }
+            }
+
+            #clock{
+                grid-area: 2/1/3/2;
+
+                ul{
+                    display: flex;
+                    gap: 1em;
+                    flex-wrap: wrap;
+                }
+            }
+
+            #lang{
+                grid-area: 1/2/2/3;
+            }
+
+            #contact{
+                grid-area: 2/2/3/3;
+            }
+
+            #resume{
+                grid-area: 1/3/4/5;
+
+                > div{
+                    flex: 5;
+                }
             }
 
             h4{
-                flex: 1;
                 font-size: 0.5em;
                 font-weight: normal;
                 margin: 0;
             }
 
-            > div{
-                flex: 3;
-                display: flex;
-                gap: 3em;
+            ul{
+                margin: 0;
+                padding: 0;
 
-                #controls{
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 3em;
-
-                    div{
-                        display: flex;
-                        flex-direction: row;
-
-                        ul{
-                            flex: 2;
-                            margin: 0;
-                            padding: 0;
-
-                            li{
-                                list-style-type: none;
-                                opacity: 0.4;
-                                cursor: pointer;
-                            }
-                            li.active{
-                                opacity: 1;
-                            }
-                        }
-
-                        .icons{
-                            display: flex;
-                            flex-direction: row;
-                            gap: 1.5em;
-                            flex-wrap: wrap;
-
-                            li{
-                                img{
-                                    height: 1.5em;
-                                }
-                                svg{
-                                    height: 1.5em;
-                                    width: 1.5em;
-                                    fill: none;
-                                    stroke: #000;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                #resume{
-                    flex: 2;
-                    display: flex;
-
-                    div{
-                        flex: 7;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 1em;
-
-                        p{
-                            margin: 0;
-                        }
-                    }
+                li{
+                    list-style-type: none;
                 }
             }
+
+            p{
+                margin: 0;
+            }
+
+            svg{
+                height: 1.5em;
+                width: 1.5em;
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+
         }
 
         footer{
@@ -318,7 +314,20 @@ body{
     body{
         #root{
             header{
-                flex-direction: column;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3,auto);
+
+                #clock{
+                    grid-area: 1/2/2/3;
+                }
+
+                #lang{
+                    grid-area: 2/1/2/2;
+                }
+
+                #resume{
+                    grid-area: 3/1/4/3;
+                }
             }
 
             footer{
@@ -377,6 +386,19 @@ body{
 @media (min-width: 768px) and (max-width: 992px){
     body{
         #root{
+            header{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, auto);
+
+                #contact{
+                    grid-area: 1/3/2/4;
+                }
+
+                #resume{
+                    grid-area: 2/2/3/4;
+                }
+            }
+            
             #content{
                 .scroller{
                     > div{
@@ -428,23 +450,7 @@ body{
 
 @media (max-width: 992px) {
 
-    body{
-        #root{
-            header{
-                >div{
-                    flex-direction: column;
-
-                    #controls{
-                        flex-direction: row;
-
-                        > div{
-                            flex: 1;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
 }
 
 @media (min-width: 992px){

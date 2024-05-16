@@ -28,7 +28,7 @@ export const projects = [
     },
     {
         "id": "frac-artotheque-site",
-        "title": "Site web Frac-Arto",
+        "title": "Frac-Arto : site web",
         "date": "2022",
         "for": "Frac-Artothèque Nouvelle-Aquitaine",
         "with": [
@@ -125,7 +125,7 @@ export const projects = [
     },
     {
         "id": "frac-videos",
-        "title": "Frac Vidéos",
+        "title": "Frac-Arto : vidéo",
         "date": "2023",
         "for": "Frac",
         "with": [

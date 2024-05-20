@@ -34,39 +34,23 @@ export function Project() {
                     <NavLink className="close" to="/">fermer</NavLink>
                     <header>
                         <NavLink className="close" to="/">fermer</NavLink>
-                        <dl className="gutter">
+                        <dl>
                             <dt>Projet</dt>
                             <dd>{project.title}</dd>
                         </dl>
-                        <dl className="gutter">
+                        <dl>
                             <dt>Année</dt>
                             <dd>{project.date}</dd>
                         </dl>
-                        {/* <dl className="gutter sm-screen">
-                            <dt>Pour</dt>
-                            <dd>{project.for}</dd>
-                        </dl>
-                        <dl className="gutter sm-screen">
-                            <dt>Avec</dt>
-                            <dd>
-                                {project.with.map((value, index) => {
-                                    return <a key={index} href={value["link"]}>{value["name"]}</a>
-                                })}
-                            </dd>
-                        </dl>
-                        <dl className="gutter sm-screen">
-                            <dt>Catégorie</dt>
-                            <dd>{project.category}</dd>
-                        </dl> */}
                     </header>
                     <main>
                         <div className="infos">
-                            <div className="col-1">
-                                <dl className="gutter">
+                            <div id="datas">
+                                <dl>
                                     <dt>Pour</dt>
                                     <dd>{project.for}</dd>
                                 </dl>
-                                <dl className="gutter">
+                                <dl>
                                     <dt>Avec</dt>
                                     <dd>
                                         {project.with.map((value, index) => {
@@ -74,13 +58,13 @@ export function Project() {
                                         })}
                                     </dd>
                                 </dl>
-                                <dl className="gutter">
+                                <dl>
                                     <dt>Catégorie</dt>
                                     <dd>{project.category}</dd>
                                 </dl>
                             </div>
-                            <div className="col-2">
-                                <dl className="gutter">
+                            <div id="details">
+                                <dl>
                                     <dt>Informations projet</dt>
                                     <dd>{project.informations}</dd>
                                 </dl>

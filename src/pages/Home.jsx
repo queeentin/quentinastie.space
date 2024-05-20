@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Clock } from '../components/Clock';
 import { Lang } from '../components/Lang';
 import { Socials } from '../components/Socials';
+import { useTranslation } from 'react-i18next';
 
 export function Home() {
     return (

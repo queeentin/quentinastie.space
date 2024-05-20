@@ -4,9 +4,6 @@ body {
 body #root > header {
   color: white;
 }
-body #root > header a {
-  color: white !important;
-}
 body #root > header .icons svg {
   filter: invert(100%);
 }

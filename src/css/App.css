@@ -1,17 +1,15 @@
+@charset "UTF-8";
 @import "Ductus.css";
+/* Sur grands écrans */
 body {
   font-family: "Ductus Regular";
-  background: linear-gradient(180deg, #FFC0F9 0%, #FFF 100%);
   height: 100vh;
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
 body a {
-  color: black;
-}
-body .gutter {
-  gap: 1em;
+  color: inherit;
 }
 body #root {
   height: 100%;
@@ -21,74 +19,85 @@ body #root {
   overflow: auto;
   box-sizing: border-box;
 }
-body #root header {
+body #root > header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-gap: 1em 4em;
   margin: 1em;
 }
-body #root header > div {
+body #root > header > div {
   display: flex;
   align-items: flex-start;
+  gap: 1em;
 }
-body #root header > div > h4 {
-  flex: 1;
+body #root > header > div > h4 {
+  width: 8em;
 }
-body #root header > div > ul {
+body #root > header > div > ul {
   flex: 2;
 }
-body #root header #name {
+body #root > header #name {
   grid-area: 1/1/2/2;
 }
-body #root header #name h1 {
+body #root > header #name h1 {
   flex: 1;
   font-size: 1em;
   font-weight: normal;
   margin: 0;
 }
-body #root header #clock {
+body #root > header #clock {
   grid-area: 2/1/3/2;
 }
-body #root header #clock ul {
+body #root > header #clock ul {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
 }
-body #root header #lang {
-  grid-area: 1/2/2/3;
+body #root > header #clock ul li {
+  opacity: 0.3;
+  cursor: pointer;
 }
-body #root header #contact {
-  grid-area: 2/2/3/3;
-}
-body #root header #resume {
-  grid-area: 1/3/4/5;
-}
-body #root header #resume > div {
-  flex: 5;
-}
-body #root header h4 {
-  font-size: 0.5em;
-  font-weight: normal;
-  margin: 0;
-}
-body #root header ul {
-  margin: 0;
-  padding: 0;
-}
-body #root header ul li {
-  list-style-type: none;
-}
-body #root header p {
-  margin: 0;
-}
-body #root header svg {
+body #root > header #clock ul li svg {
   height: 1.5em;
   width: 1.5em;
   fill: none;
   stroke: #000;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+body #root > header #lang {
+  grid-area: 1/2/2/3;
+}
+body #root > header #lang li:last-child {
+  opacity: 0.3;
+}
+body #root > header #contact {
+  grid-area: 2/2/3/3;
+}
+body #root > header #contact a {
+  text-decoration: none;
+}
+body #root > header #resume {
+  grid-area: 1/3/4/5;
+}
+body #root > header #resume > div {
+  flex: 5;
+}
+body #root > header h4 {
+  font-size: 0.5em;
+  font-weight: normal;
+  margin: 0;
+}
+body #root > header ul {
+  margin: 0;
+  padding: 0;
+}
+body #root > header ul li {
+  list-style-type: none;
+}
+body #root > header p {
+  margin: 0;
 }
 body #root footer #links {
   display: flex;
@@ -99,7 +108,6 @@ body #root footer #links {
   overflow-x: auto;
 }
 body #root footer #links a {
-  color: black;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.4392156863);
   padding: 0.5em 1em 0.5em 0.5em;
@@ -148,72 +156,67 @@ body #root #content .scroller {
   box-sizing: border-box;
 }
 body #root #content .scroller > div {
-  display: flex;
-  align-items: flex-start;
-  gap: 3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 1em 4em;
   width: calc(100vw - 2em);
 }
 body #root #content .scroller > div .close {
-  width: 100%;
-  display: block;
-  background-color: #e6e6e6;
   text-decoration: none;
+  background-color: #E4E4E4;
+  border-radius: 50px;
   text-align: center;
-  border-radius: 200px;
-  z-index: 10;
+  cursor: pointer;
 }
 body #root #content .scroller > div .close:hover {
   background-color: black;
   color: white;
 }
 body #root #content .scroller > div > .close {
-  position: sticky;
-  top: 0;
+  display: none;
+  z-index: 10;
 }
 body #root #content .scroller > div dl {
-  display: flex;
   margin: 0;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  display: flex;
+  gap: 1em;
 }
 body #root #content .scroller > div dl dt {
-  flex: 1;
+  width: 8em;
   font-size: 0.5em;
 }
 body #root #content .scroller > div dl dd {
+  flex: 1;
   margin: 0;
-  flex: 2;
 }
-body #root #content .scroller > div dl dd a {
+body #root #content .scroller > div dl dd > * {
   display: block;
 }
 body #root #content .scroller > div header {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
   gap: 1em;
   position: sticky;
   top: 0;
 }
 body #root #content .scroller > div main {
-  flex: 3;
+  grid-column: 2/5;
 }
 body #root #content .scroller > div main .infos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em 4em;
   margin-bottom: 2em;
-  gap: 3em;
 }
-body #root #content .scroller > div main .infos .col-1 {
-  display: flex;
-  flex-direction: column;
+body #root #content .scroller > div main .infos #datas {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
   gap: 1em;
-  flex: 1;
 }
-body #root #content .scroller > div main .infos .col-2 {
-  flex: 2;
-}
-body #root #content .scroller > div main .infos .col-2 dd {
-  flex: 7;
+body #root #content .scroller > div main .infos #details {
+  grid-column: 2/4;
 }
 body #root #content .scroller > div main .images {
   grid-template-columns: repeat(2, 1fr);
@@ -250,18 +253,45 @@ body #root #icon img {
   height: 60vh;
 }
 
+/* Sur très petits écrans */
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+  body #root > header > div {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  body #root #content > div header {
+    grid-template-columns: unset;
+  }
+  body #root #content > div main .infos #datas {
+    grid-template-columns: unset;
+  }
+}
+/* Sur petits écrans */
+@media (min-width: 576px) and (max-width: 768px) {
+  body #root #content > div header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body #root #content > div main .infos #datas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Sur petits et très petits écrans */
 @media (max-width: 768px) {
-  body #root header {
+  body #root > header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
+    grid-gap: 1em;
   }
-  body #root header #clock {
+  body #root > header #clock {
     grid-area: 1/2/2/3;
   }
-  body #root header #lang {
+  body #root > header #lang {
     grid-area: 2/1/2/2;
   }
-  body #root header #resume {
+  body #root > header #resume {
     grid-area: 3/1/4/3;
   }
   body #root footer {
@@ -269,78 +299,64 @@ body #root #icon img {
     bottom: 0;
   }
   body #root #content .scroller > div {
-    flex-direction: column;
-    gap: 1em;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, auto);
   }
-  body #root #content .scroller > div dl dd {
-    flex: 3;
+  body #root #content .scroller > div .close {
+    display: block;
+    position: sticky;
+    top: 0;
   }
   body #root #content .scroller > div header {
     position: relative;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
+    grid-column: unset;
+    grid-template-rows: unset;
   }
   body #root #content .scroller > div header .close {
     display: none;
   }
+  body #root #content .scroller > div main {
+    grid-column: unset;
+  }
   body #root #content .scroller > div main .infos {
-    flex-direction: column;
-    gap: 1em;
+    grid-template-columns: unset;
   }
-  body #root #content .scroller > div main .infos .col-1 {
-    flex-direction: column;
+  body #root #content .scroller > div main .infos #datas {
+    grid-column: unset;
+    grid-template-rows: unset;
   }
-  body #root #content .scroller > div main .infos .col-2 dl dd {
-    flex: 3;
+  body #root #content .scroller > div main .infos #details {
+    grid-column: unset;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  body #root header {
+/* Sur écrans moyens */
+@media (min-width: 768px) and (max-width: 1200px) {
+  body #root > header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
   }
-  body #root header #contact {
+  body #root > header #contact {
     grid-area: 1/3/2/4;
   }
-  body #root header #resume {
+  body #root > header #resume {
     grid-area: 2/2/3/4;
   }
   body #root #content .scroller > div {
-    flex-direction: column;
-    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
   }
-  body #root #content .scroller > div dl dd {
-    flex: 3;
-  }
-  body #root #content .scroller > div header {
-    position: relative;
-    flex-direction: row;
-    gap: 0;
-    width: 100%;
-  }
-  body #root #content .scroller > div header .close {
-    display: none;
-  }
-  body #root #content .scroller > div header dl {
-    flex: 1;
+  body #root #content .scroller > div main {
+    grid-column: 2/4;
   }
   body #root #content .scroller > div main .infos {
-    flex-direction: column;
-    gap: 1em;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, auto);
   }
-  body #root #content .scroller > div main .infos .col-1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    -moz-column-gap: 0;
-         column-gap: 0;
+  body #root #content .scroller > div main .infos #datas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    gap: 1em 4em;
   }
-  body #root #content .scroller > div main .infos .col-1 dl {
-    flex-basis: 50%;
-  }
-}
-@media (min-width: 992px) {
-  body #root #content .scroller > div > .close {
-    display: none;
+  body #root #content .scroller > div main .infos #details {
+    grid-column: unset;
   }
 }/*# sourceMappingURL=App.css.map */

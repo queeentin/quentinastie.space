@@ -9,9 +9,6 @@ body {
 #root > header {
   color: var(--font-color);
 }
-#root > header a {
-  color: var(--font-color);
-}
 #root > header .icons li svg {
   stroke: var(--font-color) !important;
 }/*# sourceMappingURL=rainbow.css.map */

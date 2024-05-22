@@ -1,7 +1,10 @@
 export const projects = [
     {
         "id": "continuite-revenus",
-        "title": "Continuité de revenus",
+        "title": {
+            "fr": "Continuité de revenus",
+            "en": "Income Continuity"
+        },
         "date": "2024",
         "for": "SNAP-cgt",
         "with": [
@@ -28,7 +31,10 @@ export const projects = [
     },
     {
         "id": "frac-artotheque-site",
-        "title": "Frac-Arto : site web",
+        "title": {
+            "fr": "Frac-Arto : site web",
+            "en": "Frac-Arto : website"
+        },
         "date": "2022",
         "for": "Frac-Artothèque Nouvelle-Aquitaine",
         "with": [
@@ -53,7 +59,10 @@ export const projects = [
     },
     {
         "id": "paul-dagorne",
-        "title": "Paul Dagorne",
+        "title": {
+            "fr": "Paul Dagorne",
+            "en": "Paul Dagorne"
+        },
         "date": "2023",
         "for": "Paul Dagorne",
         "with": [
@@ -80,7 +89,10 @@ export const projects = [
     },
     {
         "id": "club-celest",
-        "title": "Club Célest",
+        "title": {
+            "fr": "Club Célest",
+            "en": "Club Célest"
+        },
         "date": "2024",
         "for": "Club Célest",
         "with": [
@@ -90,17 +102,21 @@ export const projects = [
         "informations": "Blablabla",
         "category": "Typographie",
         "images": [
-            {"source" : "club-celeste-1080-2.mp4", "display" : "duo"},
-            {"source" : "club-celeste-1080.mp4", "display" : "duo"},
-            {"source" : "club-celeste-2400-v2.mp4", "display" : "solo"},
-            {"source" : "animation.mp4", "display" : "duo"},
-            {"source" : "animation.mp4", "display" : "duo"}
+            {"source" : "club-celeste-1080-2-compressed.mp4", "display" : "duo"},
+            {"source" : "club-celeste-1080-compressed.mp4", "display" : "duo"},
+            {"source" : "club-animation-jaune.mp4", "display" : "solo"},
+            {"source" : "animation2-spedup.mp4", "display" : "duo"},
+            {"source" : "animation3-spedup.mp4", "display" : "duo"},
+            {"source" : "club-celest-1.mp4", "display" : "solo"}
         ],
         "icon" : "icon.svg"
     },
     {
         "id": "ecume-studio",
-        "title": "Écume Studio",
+        "title": {
+            "fr": "Écume Studio",
+            "en": "Écume Studio"
+        },
         "date": "2023",
         "for": "Écume Studio",
         "with": [
@@ -125,7 +141,10 @@ export const projects = [
     },
     {
         "id": "frac-videos",
-        "title": "Frac-Arto : vidéo",
+        "title": {
+            "fr": "Frac-Arto : vidéos",
+            "en": "Frac-Arto : motion"
+        },
         "date": "2023",
         "for": "Frac",
         "with": [
@@ -152,4 +171,29 @@ export const projects = [
         ],
         "icon" : "icon.png"
     },
+    {
+        "id": "journees-matrimoine-montreuil",
+        "title": {
+            "fr": "Journées du Matrimoine à Montreuil",
+            "en": "Women heritage days in Montreuil"
+        },
+        "date": "2024",
+        "for": "Montreuil",
+        "with": [
+            { "name": "Pedro Cardoso",
+            "link": "https://pedrocardoso.fr/"}
+        ],
+        "informations": "Blablabla",
+        "category": "Identité",
+        "images": [
+            {"source" : "mockup-affiches.png", "display" : "solo"},
+            {"source" : "image-1.png", "display" : "duo"},
+            {"source" : "m-animation.mp4", "display" : "duo"},
+            {"source" : "lettres-nb.jpg", "display" : "solo"},
+            {"source" : "image-2.jpg", "display" : "solo"},
+            {"source" : "animation-01.mp4", "display" : "duo"},
+            {"source" : "animation-02.mp4", "display" : "duo"}
+        ],
+        "icon" : "icon.svg"
+    }
 ];

@@ -1,18 +1,17 @@
-.icons li:last-child{
-    opacity: 1 !important;
-}
-
-body{
+#root{
     background: linear-gradient(white, var(--bg-color));
-}
 
-#root > header{
+    > header{
     color: var(--font-color);
 
-    .icons{
-        li{
-            svg{
-                stroke: var(--font-color) !important;
+        .icons{
+            li{
+                svg{
+                    stroke: var(--font-color) !important;
+                }
+            }
+            li:last-child{
+                opacity: 1 !important;
             }
         }
     }

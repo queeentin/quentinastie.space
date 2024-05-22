@@ -1,8 +1,7 @@
-body {
+body #root {
   background: linear-gradient(180deg, #d299c2, #fef9d7);
   background: linear-gradient(#fffadc, #ffbbe9);
 }
-
-.icons li:first-child {
+body #root > header #clock ul.icons li:first-child {
   opacity: 1 !important;
 }/*# sourceMappingURL=morning.css.map */

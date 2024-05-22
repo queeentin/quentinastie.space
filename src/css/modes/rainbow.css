@@ -1,14 +1,12 @@
-.icons li:last-child {
-  opacity: 1 !important;
-}
-
-body {
+#root {
   background: linear-gradient(white, var(--bg-color));
 }
-
 #root > header {
   color: var(--font-color);
 }
 #root > header .icons li svg {
   stroke: var(--font-color) !important;
+}
+#root > header .icons li:last-child {
+  opacity: 1 !important;
 }/*# sourceMappingURL=rainbow.css.map */

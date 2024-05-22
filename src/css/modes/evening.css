@@ -1,4 +1,4 @@
-body {
+body #root {
   background: linear-gradient(to top, #D88B19, #132758);
 }
 body #root > header {

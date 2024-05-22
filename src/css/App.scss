@@ -4,7 +4,6 @@
 
 body{
     font-family: "Ductus Regular";
-    // background: linear-gradient(180deg, #FFC0F9 0%, #FFF 100%);
     height: 100vh;
     margin: 0;
     box-sizing: border-box;
@@ -15,7 +14,9 @@ body{
     }
 
     #root{
+        position: fixed;
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -82,8 +83,12 @@ body{
             #lang{
                 grid-area: 1/2/2/3;
 
-                li:last-child{
+                li{
+                    cursor: pointer;
                     opacity: 0.3;
+                }
+                li.active{
+                    opacity: 1;
                 }
             }
 
@@ -174,10 +179,10 @@ body{
         }
 
         #content{
-            position: absolute;
+            position: fixed;
             left: 0;
-            top: 10vh;
-            height: 90vh;
+            bottom: 0;
+            height: 90%;
             overflow: hidden;
             width: 100%;
             background-color: white;
@@ -200,17 +205,18 @@ body{
 
                     .close{
                         text-decoration: none;
-                        background-color: #E4E4E4;
+                        background-color: #e6e6e6;
                         border-radius: 50px;
                         text-align: center;
                         cursor: pointer;
-                    }
-                    .close:hover{
-                        background-color: black;
-                        color: white;
+                        &:hover {
+                            background-color: black;
+                            color: white;
+                        }
                     }
 
                     > .close{
+                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
                         display: none;
                         z-index: 10;
                     }
@@ -271,6 +277,7 @@ body{
                             grid-gap: 1em;
 
                             figure{
+                                position: relative;
                                 margin: 0;
                                 background-color: lightgrey;
                                 border-radius: 20px;
@@ -306,6 +313,7 @@ body{
             mix-blend-mode: multiply;
             img{
                 height: 60vh;
+                display: none;
             }
         }
     }
@@ -336,6 +344,12 @@ body{
                             }
                         }
                     }
+                }
+            }
+            #icon{
+                img{
+                    height: auto;
+                    width: 80vw;
                 }
             }
         }

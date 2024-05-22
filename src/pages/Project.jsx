@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { projects } from '../content/projects';
+import { projects } from "../content/projects";
+import { useTranslation } from "react-i18next";
 
 export function Project() {
+
+    const {t, i18n} = useTranslation();
+    const language = i18n.language;
 
     const { id } = useParams();
     const [project, setProject] = useState(null);
@@ -31,15 +35,15 @@ export function Project() {
         >
             <div className="scroller">
                 <div>
-                    <NavLink className="close" to="/">fermer</NavLink>
+                    <NavLink className="close" to="/">{t("close")}</NavLink>
                     <header>
-                        <NavLink className="close" to="/">fermer</NavLink>
+                        <NavLink className="close" to="/">{t("close")}</NavLink>
                         <dl>
-                            <dt>Projet</dt>
-                            <dd>{project.title}</dd>
+                            <dt>{t("labels.project")}</dt>
+                            <dd>{project.title[language]}</dd>
                         </dl>
                         <dl>
-                            <dt>Année</dt>
+                            <dt>{t("labels.year")}</dt>
                             <dd>{project.date}</dd>
                         </dl>
                     </header>
@@ -47,11 +51,11 @@ export function Project() {
                         <div className="infos">
                             <div id="datas">
                                 <dl>
-                                    <dt>Pour</dt>
+                                    <dt>{t("labels.for")}</dt>
                                     <dd>{project.for}</dd>
                                 </dl>
                                 <dl>
-                                    <dt>Avec</dt>
+                                    <dt>{t("labels.with")}</dt>
                                     <dd>
                                         {project.with.map((value, index) => {
                                             return <a key={index} href={value["link"]}>{value["name"]}</a>
@@ -59,13 +63,13 @@ export function Project() {
                                     </dd>
                                 </dl>
                                 <dl>
-                                    <dt>Catégorie</dt>
+                                    <dt>{t("labels.category")}</dt>
                                     <dd>{project.category}</dd>
                                 </dl>
                             </div>
                             <div id="details">
                                 <dl>
-                                    <dt>Informations projet</dt>
+                                    <dt>{t("labels.infos")}</dt>
                                     <dd>{project.informations}</dd>
                                 </dl>
                             </div>
@@ -74,13 +78,13 @@ export function Project() {
                             {project.images.map((item, index) => {
                                 if (item.display === "solo"){
                                     if (item.source.endsWith("mp4")){
-                                        return <figure key={index} className="solo"><video autoPlay loop muted src={"./images/" + id + "/" + item.source}/></figure>
+                                        return <figure key={index} className="solo"><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item.source}/></figure>
                                     } else {
                                         return <figure key={index} className="solo"><img src={"./images/" + id + "/" + item.source}/></figure>
                                     }
                                 } else {
                                     if (item.source.endsWith("mp4")){
-                                        return <figure key={index} className="duo"><video autoPlay loop muted src={"./images/" + id + "/" + item.source}/></figure>
+                                        return <figure key={index} className="duo"><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item.source}/></figure>
                                     } else {
                                         return <figure key={index} className="duo"><img src={"./images/" + id + "/" + item.source}/></figure>
                                     }

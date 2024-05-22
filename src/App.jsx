@@ -6,15 +6,11 @@ import "./css/modes/afternoon.css";
 import "./css/modes/evening.css";
 import "./css/modes/night.css";
 import "./css/modes/rainbow.css";
-import { Footer } from "./components/Footer.jsx";
-import { Icon } from "./components/Icon.jsx";
 
 function App() {
   return (
     <>
-      <Icon />
       <Home />
-      <Footer />
       <AnimatedRoute />
     </>
   );

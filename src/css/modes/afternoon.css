@@ -1,8 +1,6 @@
-body {
-  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+body #root {
   background: linear-gradient(to top, #fddb92 0%, #73b7ff 100%);
 }
-
-.icons li:nth-child(2) {
+body #root > header #clock .icons li:nth-child(2) {
   opacity: 1 !important;
 }/*# sourceMappingURL=afternoon.css.map */

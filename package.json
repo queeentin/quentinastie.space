@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "framer-motion": "^11.1.7",
-    "i18next": "^23.11.4",
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^8.0.0",
     "list-react-files": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

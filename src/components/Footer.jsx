@@ -1,37 +1,45 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { projects } from "../content/projects";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+
+    const { i18n } = useTranslation();
+    const language = i18n.language;
 
     useEffect(() => {
         const iconImg = document.getElementById("iconImg");
     }, []);
+
+    function supportsHover() {
+        return window.matchMedia("(hover: hover)").matches;
+    }
     
     function displayIcon(event){
-        const myClass = event.currentTarget.className;
-        const fileName = event.currentTarget.getAttribute("data-ext");
-        const newSrc = "./images/" + myClass + "/" + fileName;
-        iconImg.src = newSrc;
+        if (supportsHover()){
+            const myClass = event.currentTarget.className;
+            const fileName = event.currentTarget.getAttribute("data-ext");
+            const newSrc = "./images/" + myClass + "/" + fileName;
+            iconImg.src = newSrc;
+            iconImg.style.display = "block";
+        }
     }
 
     function clearImageSrc(){
-        iconImg.src = "";
+        iconImg.style.display = "none";
     }
     
     return (
         <footer>
             <div id="links">
                 {projects.map((value, index) => {
+                    const title = value.title[language];
                     return (
                         <NavLink onMouseOver={displayIcon} onMouseOut={clearImageSrc} key={index} className={value["id"]} data-ext={value["icon"]} to={"/"+value["id"]}>
                             <figure><img src={"./images/" + value["id"] + "/" + value["icon"]}></img></figure>
-                            <p>{value["title"]}</p>
+                            <p>{title}</p>
                         </NavLink>
-                        // <NavLink key={index} className={value["id"]} to={"/"+value["id"]}>
-                        //     <figure><img src={"./images/" + value["id"] + "/icon.svg"}></img></figure>
-                        //     <p>{value["title"]}</p>
-                        // </NavLink>
                     );
                 })}
             </div>

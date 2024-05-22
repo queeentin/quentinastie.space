@@ -12,7 +12,9 @@ body a {
   color: inherit;
 }
 body #root {
+  position: fixed;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,8 +71,12 @@ body #root > header #clock ul li svg {
 body #root > header #lang {
   grid-area: 1/2/2/3;
 }
-body #root > header #lang li:last-child {
+body #root > header #lang li {
+  cursor: pointer;
   opacity: 0.3;
+}
+body #root > header #lang li.active {
+  opacity: 1;
 }
 body #root > header #contact {
   grid-area: 2/2/3/3;
@@ -138,10 +144,10 @@ body #root footer #links a:hover {
   background-color: rgba(255, 255, 255, 0.6862745098);
 }
 body #root #content {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 10vh;
-  height: 90vh;
+  bottom: 0;
+  height: 90%;
   overflow: hidden;
   width: 100%;
   background-color: white;
@@ -164,7 +170,7 @@ body #root #content .scroller > div {
 }
 body #root #content .scroller > div .close {
   text-decoration: none;
-  background-color: #E4E4E4;
+  background-color: #e6e6e6;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
@@ -174,6 +180,7 @@ body #root #content .scroller > div .close:hover {
   color: white;
 }
 body #root #content .scroller > div > .close {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   display: none;
   z-index: 10;
 }
@@ -225,6 +232,7 @@ body #root #content .scroller > div main .images {
   grid-gap: 1em;
 }
 body #root #content .scroller > div main .images figure {
+  position: relative;
   margin: 0;
   background-color: lightgrey;
   border-radius: 20px;
@@ -251,6 +259,7 @@ body #root #icon {
 }
 body #root #icon img {
   height: 60vh;
+  display: none;
 }
 
 /* Sur très petits écrans */
@@ -267,6 +276,10 @@ body #root #icon img {
   }
   body #root #content > div main .infos #datas {
     grid-template-columns: unset;
+  }
+  body #root #icon img {
+    height: auto;
+    width: 80vw;
   }
 }
 /* Sur petits écrans */

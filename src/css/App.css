@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import "Ductus.css";
+@import "fontsize.css";
+@import "reset.css";
 /* Sur grands écrans */
 body {
   font-family: "Ductus Regular";
@@ -44,7 +46,6 @@ body #root > header #name {
 }
 body #root > header #name h1 {
   flex: 1;
-  font-size: 1em;
   font-weight: normal;
   margin: 0;
 }
@@ -91,7 +92,6 @@ body #root > header #resume > div {
   flex: 5;
 }
 body #root > header h4 {
-  font-size: 0.5em;
   font-weight: normal;
   margin: 0;
 }
@@ -115,7 +115,7 @@ body #root footer #links {
 }
 body #root footer #links a {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.4392156863);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5em 1em 0.5em 0.5em;
   border-radius: 10px;
   white-space: nowrap;
@@ -141,7 +141,7 @@ body #root footer #links a p {
   margin: 0;
 }
 body #root footer #links a:hover {
-  background-color: rgba(255, 255, 255, 0.6862745098);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 body #root #content {
   position: fixed;
@@ -191,7 +191,6 @@ body #root #content .scroller > div dl {
 }
 body #root #content .scroller > div dl dt {
   width: 8em;
-  font-size: 0.5em;
 }
 body #root #content .scroller > div dl dd {
   flex: 1;
@@ -264,9 +263,6 @@ body #root #icon img {
 
 /* Sur très petits écrans */
 @media (max-width: 576px) {
-  body {
-    font-size: 15px;
-  }
   body #root > header > div {
     flex-direction: column;
     gap: 0.5em;

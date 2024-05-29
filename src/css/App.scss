@@ -1,4 +1,6 @@
 @import "Ductus.css";
+@import "fontsize.css";
+@import "reset.css";
 
 /* Sur grands écrans */
 
@@ -50,7 +52,6 @@ body{
 
                 h1{
                     flex: 1;
-                    font-size: 1em;
                     font-weight: normal;
                     margin: 0;
                 }
@@ -109,7 +110,6 @@ body{
             }
 
             h4{
-                font-size: 0.5em;
                 font-weight: normal;
                 margin: 0;
             }
@@ -141,16 +141,14 @@ body{
 
                 a{
                     text-decoration: none;
-                    background-color: #ffffff70;
+                    background-color: rgba(255, 255, 255, 0.7);
                     padding: 0.5em 1em 0.5em 0.5em;
-                    // padding: 0.3em 1.5em;
                     border-radius: 10px;    
                     white-space: nowrap;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     gap: 1em;
-                    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
                     backdrop-filter: blur(5px);
                     
                     figure{
@@ -173,7 +171,7 @@ body{
                 }
 
                 a:hover{
-                    background-color: #ffffffaf;
+                    background-color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
@@ -228,7 +226,6 @@ body{
 
                         dt{
                             width: 8em;
-                            font-size: 0.5em;
                         }
 
                         dd{
@@ -323,7 +320,6 @@ body{
 
 @media (max-width: 576px) {
     body{
-        font-size: 15px;
 
         #root{
             > header{
@@ -475,10 +471,6 @@ body{
                 .scroller{
                     > div{
                         grid-template-columns: repeat(3, 1fr);
-
-                        header{
-
-                        }
 
                         main{
                             grid-column: 2/4;

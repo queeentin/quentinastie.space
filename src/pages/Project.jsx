@@ -54,6 +54,7 @@ export function Project() {
                                     <dt>{t("labels.for")}</dt>
                                     <dd>{project.for}</dd>
                                 </dl>
+                                {project.with && (
                                 <dl>
                                     <dt>{t("labels.with")}</dt>
                                     <dd>
@@ -62,9 +63,10 @@ export function Project() {
                                         })}
                                     </dd>
                                 </dl>
+                                )}
                                 <dl>
                                     <dt>{t("labels.category")}</dt>
-                                    <dd>{project.category}</dd>
+                                    <dd>{project.category[language]}</dd>
                                 </dl>
                             </div>
                             <div id="details">

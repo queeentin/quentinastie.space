@@ -1,0 +1,203 @@
+club-celest:
+total 121344
+-rw-r--r--  1 quentin  staff    295513 15 mai 11:12 animation.mp4
+-rw-r--r--@ 1 quentin  staff   3530705 21 mai 16:33 animation2-spedup.mp4
+-rw-r--r--@ 1 quentin  staff   3439879 21 mai 16:29 animation3-spedup.mp4
+-rw-r--r--@ 1 quentin  staff    963759 21 mai 19:28 club-animation-cropped-compressed.mp4
+-rwxr-xr-x  1 quentin  staff   6780742 21 mai 19:22 club-animation-cropped.mp4
+-rw-r--r--@ 1 quentin  staff    876935 21 mai 19:43 club-animation-cropped2-compressed.mp4
+-rw-r--r--@ 1 quentin  staff    653080 21 mai 20:00 club-animation-jaune.mp4
+-rw-r--r--  1 quentin  staff   1218755 15 mar 17:15 club-celest-1.mp4
+-rw-r--r--@ 1 quentin  staff   1005191 21 mai 17:57 club-celeste-1080-2-compressed.mp4
+-rwxr-xr-x  1 quentin  staff   6670379 13 mai 11:30 club-celeste-1080-2.mp4
+-rw-r--r--@ 1 quentin  staff   1517707 21 mai 17:58 club-celeste-1080-compressed.mp4
+-rwxr-xr-x  1 quentin  staff   8736158 13 mai 11:30 club-celeste-1080.mp4
+-rw-r--r--@ 1 quentin  staff   2531290 21 mai 17:55 club-celeste-2400-v2-compressed.mp4
+-rwxr-xr-x  1 quentin  staff  23846991 13 mai 11:51 club-celeste-2400-v2.mp4
+-rw-r--r--  1 quentin  staff       978 14 mai 20:14 icon-bis.svg
+-rw-r--r--  1 quentin  staff     17012 15 mai 15:10 icon-grain-1.png
+-rw-r--r--@ 1 quentin  staff       292 15 mai 15:10 icon-grain.svg
+-rw-r--r--  1 quentin  staff      2353 14 mai 20:18 icon.svg
+
+continuite-revenus:
+total 338680
+-rwx--x--x@ 1 quentin  staff  26310274 22 avr 17:49 01.mp4
+-rwx--x--x@ 1 quentin  staff  53385912 22 avr 17:48 02.mp4
+-rwx--x--x@ 1 quentin  staff  56173583 22 avr 17:44 03.mp4
+-rwx--x--x@ 1 quentin  staff  35262372 22 avr 17:45 04.mp4
+-rw-------@ 1 quentin  staff    159660 29 avr 13:48 carre-1.png
+-rw-------@ 1 quentin  staff    251518 29 avr 13:48 carre-2.png
+-rw-------@ 1 quentin  staff    357946 22 avr 17:51 carre-3.png
+-rw-r--r--  1 quentin  staff      3595 14 mai 16:04 icon.svg
+-rw-r--r--  1 quentin  staff     10571 14 mai 15:52 icon2.svg
+-rw-------@ 1 quentin  staff    545274 22 avr 17:58 rectangle-1.png
+-rw-------@ 1 quentin  staff    400986 22 avr 17:58 rectangle-2.png
+-rw-------@ 1 quentin  staff    209825 22 avr 17:58 rectangle-3.png
+-rw-------@ 1 quentin  staff    311074 22 avr 17:58 rectangle-4.png
+
+cqrdnm:
+total 32304
+-rw-------@ 1 quentin  staff   855359 30 mai 16:29 IMG_5690.jpg
+-rw-------@ 1 quentin  staff   715362 30 mai 16:33 IMG_5693.jpg
+-rw-r--r--@ 1 quentin  staff  3243813 30 mai 16:11 IMG_9948.jpg
+-rw-------@ 1 quentin  staff  1966869 30 mai 16:42 IMG_9957.jpg
+-rw-------@ 1 quentin  staff  2569261 30 mai 16:43 IMG_9958.jpg
+-rw-r--r--@ 1 quentin  staff  3222453 18 fév  2022 doublepage-01.jpg
+-rw-r--r--@ 1 quentin  staff     4650 30 mai 15:49 icon.svg
+-rw-------  1 quentin  staff  1390413 30 mai 17:10 scan-1.jpg
+-rw-------  1 quentin  staff  1147861 30 mai 17:26 scan-2.jpg
+-rw-------@ 1 quentin  staff  1401145 30 mai 17:32 scan-3.jpg
+
+creation-en-cours:
+total 156264
+-rwxr-xr-x@ 1 quentin  staff   2400032 28 mai 16:27 01.mp4
+-rwxr-xr-x@ 1 quentin  staff   3119826 28 mai 16:42 02.mp4
+-rwxr-xr-x@ 1 quentin  staff   5098006 28 mai 17:07 03.mp4
+-rwxr-xr-x@ 1 quentin  staff   1200162 28 mai 17:14 04.mp4
+-rwxr-xr-x@ 1 quentin  staff   1310587 28 mai 17:23 05.mp4
+-rwxr-xr-x@ 1 quentin  staff   2923236 28 mai 17:33 06.mp4
+-rw-r--r--@ 1 quentin  staff    636528 29 mai 18:08 IMG_1382.JPG
+-rw-r--r--@ 1 quentin  staff    715459 29 mai 18:08 IMG_1442.JPG
+-rw-r--r--@ 1 quentin  staff   1964834 29 mai 18:46 IMG_1895.JPG
+-rw-r--r--@ 1 quentin  staff   1901285 29 mai 18:46 IMG_1918.JPG
+-rw-r--r--@ 1 quentin  staff   2564201 29 mai 18:31 IMG_8547.jpg
+-rw-r--r--@ 1 quentin  staff   2755515 29 mai 18:08 IMG_8560.jpg
+-rw-r--r--@ 1 quentin  staff   1942660 29 mai 18:33 IMG_8563.jpg
+-rw-r--r--@ 1 quentin  staff   2816852 29 mai 18:08 IMG_8613.jpg
+-rw-r--r--@ 1 quentin  staff    906778 29 mai 18:36 IMG_8621.jpg
+-rw-r--r--  1 quentin  staff   2250243 29 mai 18:06 book-12.jpg
+-rw-r--r--  1 quentin  staff   1997523 29 mai 18:06 book-130.jpg
+-rw-r--r--  1 quentin  staff   3546008 29 mai 18:06 book-156.jpg
+-rw-r--r--  1 quentin  staff   2198731 29 mai 18:06 book-164.jpg
+-rw-r--r--  1 quentin  staff   3106089 29 mai 18:06 book-32.jpg
+-rw-r--r--  1 quentin  staff   2257961 29 mai 18:06 book-36.jpg
+-rw-r--r--  1 quentin  staff   3290869 29 mai 18:06 book-44.jpg
+-rw-r--r--  1 quentin  staff   3433963 29 mai 18:06 book-48.jpg
+-rw-r--r--  1 quentin  staff   3284689 29 mai 18:06 cover.jpg
+-rw-r--r--@ 1 quentin  staff    556119 29 mai 18:43 double-page-01.jpg
+-rw-r--r--@ 1 quentin  staff    613857 29 mai 18:19 double-page-02.jpg
+-rw-r--r--@ 1 quentin  staff    172535 29 mai 18:22 double-page-03.jpg
+-rw-r--r--@ 1 quentin  staff     33009 29 mai 19:05 icon.png
+-rw-r--r--@ 1 quentin  staff   7279101 29 mai 19:02 invitation.mp4
+-rw-r--r--@ 1 quentin  staff   1617552 29 mai 18:58 riso.mp4
+-rw-r--r--@ 1 quentin  staff  12050464 29 mai 18:52 video-exposition.mp4
+
+ecume-studio:
+total 291592
+-rw-r--r--  1 quentin  staff   1158670 30 mai 15:12 animation2.mp4
+-rwxr-xr-x  1 quentin  staff  17940182 15 mai 12:26 double-tel-bis.mp4
+-rw-r--r--  1 quentin  staff   2585308 15 mai 12:26 es-carre1.png
+-rw-r--r--  1 quentin  staff   3567249 15 mai 12:26 es-carre2.png
+-rw-r--r--  1 quentin  staff   4484773 15 mai 12:26 es-rectangle1.png
+-rw-r--r--  1 quentin  staff   6238746 15 mai 12:26 es-rectangle2.png
+-rw-r--r--  1 quentin  staff   4512576 15 mai 12:26 es-rectangle3.png
+-rw-r--r--  1 quentin  staff   5904534 15 mai 12:26 es-rectangle4.png
+-rwxr-xr-x  1 quentin  staff  11678874 15 mai 12:26 home-page.mp4
+-rw-r--r--@ 1 quentin  staff      5291 15 mai 16:27 icon.svg
+-rw-r--r--@ 1 quentin  staff    271243 30 mai 15:00 image-bitmap.jpg
+-rwxr-xr-x  1 quentin  staff  28232561 15 mai 12:26 ordi-seul.mp4
+-rwxr-xr-x  1 quentin  staff  29400616 15 mai 12:26 ordi-tel-2400.mp4
+-rwxr-xr-x  1 quentin  staff  33291882 15 mai 12:26 ordi-tel-same_1.mp4
+
+frac-artotheque-site:
+total 206784
+-rw-r--r--  1 quentin  staff   2059180  6 mai 18:13 carre1.1.png
+-rw-r--r--  1 quentin  staff   1402762  6 mai 18:13 carre2.1.png
+-rwxr-xr-x  1 quentin  staff  10032536 30 avr 14:47 carrousel-1080_1.mp4
+-rwxr-xr-x@ 1 quentin  staff  20091702 30 avr 14:57 coll-frac-arto-2400.mp4
+-rwxr-xr-x  1 quentin  staff  27571531 30 avr 14:52 emprunt-frac-arto-1080.mp4
+-rw-r--r--  1 quentin  staff      2085 14 mai 15:49 icon.svg
+-rwxr-xr-x@ 1 quentin  staff  22099887  6 mai 17:50 mentions-legales_1.mp4
+-rwxr-xr-x  1 quentin  staff  17980218  7 mai 10:46 ordi-accueil.mp4
+-rw-r--r--  1 quentin  staff    718543 30 avr 16:57 rectangle-4.png
+-rw-r--r--  1 quentin  staff   2113620  7 mai 11:15 rectangle2.2.png
+-rw-r--r--  1 quentin  staff   1775692  6 mai 18:17 rectangle3.1.png
+
+frac-videos:
+total 442048
+-rw-r--r--@ 1 quentin  staff   4017190 15 mai 16:16 icon.png
+-rw-r--r--  1 quentin  staff    281060 15 mai 12:26 rs-carre-1.png
+-rw-r--r--  1 quentin  staff    426502 15 mai 12:26 rs-carre.png
+-rw-r--r--  1 quentin  staff    930331 15 mai 12:26 rs-paysage.png
+-rwxr-xr-x  1 quentin  staff  11854545 15 mai 12:26 web-1080-all-mobiles_1.mp4
+-rwxr-xr-x  1 quentin  staff   7353580 15 mai 12:26 web-1080-all-over-1.mp4
+-rwxr-xr-x  1 quentin  staff   7588821 15 mai 12:26 web-1080-all-over-2.mp4
+-rwxr-xr-x  1 quentin  staff  13431279 15 mai 12:26 web-1080-mobile-duo.mp4
+-rwxr-xr-x  1 quentin  staff   9436721 15 mai 12:26 web-1080-mobile-seul-2.mp4
+-rwxr-xr-x  1 quentin  staff   1613957 15 mai 12:26 web-1080-mobile-seul-2_2.mp4
+-rwxr-xr-x  1 quentin  staff   4109626 15 mai 12:26 web-1080-mobile-seul.mp4
+-rwxr-xr-x  1 quentin  staff  10152100 15 mai 12:26 web-1080-mockups-mobiles-2.mp4
+-rwxr-xr-x  1 quentin  staff   9940996 15 mai 12:26 web-1080-mockups-mobiles.mp4
+-rwxr-xr-x  1 quentin  staff  15246151 15 mai 12:26 web-1080-paysage-1.mp4
+-rwxr-xr-x  1 quentin  staff  14834876 15 mai 12:26 web-1080-paysage-2.mp4
+-rwxr-xr-x  1 quentin  staff  14778907 15 mai 12:26 web-1920-all-over-1.mp4
+-rwxr-xr-x  1 quentin  staff  15093308 15 mai 12:26 web-1920-all-over-2.mp4
+-rwxr-xr-x  1 quentin  staff  14494753 15 mai 12:26 web-1920-all-over-mobiles 2.mp4
+-rwxr-xr-x  1 quentin  staff  14494753 15 mai 12:26 web-1920-all-over-mobiles 2_1.mp4
+-rwxr-xr-x  1 quentin  staff  14600562 15 mai 12:26 web-1920-all-over-mobiles.mp4
+-rwxr-xr-x  1 quentin  staff  12041535 15 mai 12:26 web-1920-duo-ordinateurs.mp4
+-rwxr-xr-x  1 quentin  staff  14991882 15 mai 12:26 web-1920-tryptique-horizontal.mp4
+-rwxr-xr-x  1 quentin  staff  14562594 15 mai 12:26 web-1920-tryptique-vertical.mp4
+
+journees-matrimoine-montreuil:
+total 115680
+-rw-r--r--  1 quentin  staff   5979222 22 mai 15:42 animation-01.mp4
+-rw-r--r--  1 quentin  staff   4576274 22 mai 15:44 animation-02.mp4
+-rw-r--r--@ 1 quentin  staff     17634 22 mai 15:28 icon.svg
+-rw-r--r--@ 1 quentin  staff  19144082 22 mai 17:40 image-1.png
+-rw-r--r--@ 1 quentin  staff    465719 22 mai 18:39 image-2.jpg
+-rw-r--r--@ 1 quentin  staff    520418 22 mai 18:36 lettres-nb.jpg
+-rw-r--r--  1 quentin  staff   2800021 22 mai 18:28 m-animation.mp4
+-rw-r--r--@ 1 quentin  staff  25706664 20 avr 20:57 mockup-affiches.png
+
+mmmh:
+total 129880
+-rw-r--r--@ 1 quentin  staff      3099 31 mai 18:02 icon.svg
+-rwxr-xr-x  1 quentin  staff    493151 31 mai 18:14 mmmh-animation.mp4
+-rwxr-xr-x  1 quentin  staff  18515991 31 mai 17:59 mmmh-video-01.mp4
+-rwxr-xr-x  1 quentin  staff  18927818 31 mai 17:56 mmmh-video-02.mp4
+-rwxr-xr-x  1 quentin  staff  18851480 31 mai 17:56 mmmh-video-03.mp4
+-rwxr-xr-x@ 1 quentin  staff   5043385 31 mai 17:17 mmmh-vilnius-01.jpg
+-rw-------@ 1 quentin  staff   1171601 31 mai 17:54 mmmh-vilnius-02.jpg
+-rw-------@ 1 quentin  staff    539879 31 mai 17:18 mmmh-vilnius-03.jpg
+-rw-------@ 1 quentin  staff    727902 31 mai 17:28 mmmh-vilnius-04.jpg
+-rw-------@ 1 quentin  staff   1213659 31 mai 17:20 mmmh-vilnius-05.jpg
+-rw-------@ 1 quentin  staff    983863 31 mai 17:22 mmmh-vilnius-06.jpg
+
+paul-dagorne:
+total 540864
+-rwx--x--x@ 1 quentin  staff  44461697 29 avr 11:57 01.mp4
+-rwx--x--x@ 1 quentin  staff  30619021 29 avr 11:56 02.mp4
+-rwx--x--x@ 1 quentin  staff  44053445 30 avr 11:29 03.mp4
+-rwx--x--x@ 1 quentin  staff  50079801 30 avr 11:27 04.mp4
+-rwx--x--x@ 1 quentin  staff  37998244 29 avr 11:52 05.mp4
+-rwx--x--x@ 1 quentin  staff  55338693 30 avr 11:31 06.mp4
+-rw-------@ 1 quentin  staff    629114 30 avr 11:21 carre-1.png
+-rw-------@ 1 quentin  staff    350365 30 avr 11:21 carre-2.png
+-rw-r--r--  1 quentin  staff      8661 15 mai 18:14 icon.svg
+-rw-------@ 1 quentin  staff   2526526 30 avr 11:47 rectangle-1.png
+-rw-r--r--@ 1 quentin  staff   7228108 16 mai 14:50 rectangle-2.png
+-rw-------@ 1 quentin  staff   1577266 30 avr 11:47 rectangle-3.png
+-rw-------@ 1 quentin  staff   2024033 30 avr 11:47 rectangle-4.png
+
+prepart-typo:
+total 18848
+-rw-r--r--@ 1 quentin  staff   294265 30 mai 17:25 ClasseB-alphabet4.mp4
+-rw-r--r--@ 1 quentin  staff  2752238 30 mai 17:29 ClasseG-alphabet5.mp4
+-rw-r--r--@ 1 quentin  staff   988172 30 mai 17:31 ClasseI-alphabet2.mp4
+-rw-r--r--@ 1 quentin  staff  2375423 30 mai 17:32 Classesoir-alphabet5.mp4
+-rw-r--r--@ 1 quentin  staff   436530 23 mai 21:29 P1010239.jpg
+-rw-r--r--@ 1 quentin  staff   723225 23 mai 21:30 P1010249.jpg
+-rw-r--r--@ 1 quentin  staff  1726835 23 mai 21:27 P1010259.jpg
+-rw-r--r--@ 1 quentin  staff   164792 23 mai 21:36 icon-old.png
+-rw-r--r--@ 1 quentin  staff   174159 23 mai 21:38 icon.png
+
+pressing-font:
+total 5680
+-rw-r--r--@ 1 quentin  staff   197102 23 mai 17:19 carre-01.jpg
+-rw-------@ 1 quentin  staff   344278 23 mai 17:18 carre-02.jpg
+-rw-r--r--@ 1 quentin  staff   304079 23 mai 17:19 carre-03.jpg
+-rw-r--r--@ 1 quentin  staff   247777 23 mai 17:19 carre-04.jpg
+-rw-r--r--@ 1 quentin  staff     1890 14 mai 18:25 icon.svg
+-rw-------@ 1 quentin  staff   219482 23 mai 17:18 paysage.jpg
+-rwxr-xr-x  1 quentin  staff  1576283 23 mai 17:23 video-carre.mp4

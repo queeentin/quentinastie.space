@@ -78,17 +78,25 @@ export function Project() {
                         </div>
                         <div className="images">
                             {project.images.map((item, index) => {
-                                if (item.display === "solo"){
-                                    if (item.source.endsWith("mp4")){
-                                        return <figure key={index} className="solo"><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item.source}/></figure>
-                                    } else {
-                                        return <figure key={index} className="solo"><img src={"./images/" + id + "/" + item.source}/></figure>
-                                    }
+                                if (Array.isArray(item) && item.length > 0) {
+                                    return (
+                                        <div key={index} className="inline">
+                                            <div>
+                                                {item.map((subItem, subIndex) => {
+                                                    if (subItem.source.endsWith("mp4")) {
+                                                        return <figure key={subIndex}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem.source} /></figure>;
+                                                    } else {
+                                                        return <figure key={subIndex}><img src={"./images/" + id + "/" + subItem.source} /></figure>
+                                                    }
+                                                })}
+                                            </div>
+                                        </div>
+                                    );
                                 } else {
-                                    if (item.source.endsWith("mp4")){
-                                        return <figure key={index} className="duo"><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item.source}/></figure>
+                                    if (item.source.endsWith("mp4")) {
+                                        return <figure key={index}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item.source} /></figure>;
                                     } else {
-                                        return <figure key={index} className="duo"><img src={"./images/" + id + "/" + item.source}/></figure>
+                                        return <figure key={index}><img src={"./images/" + id + "/" + item.source} /></figure>
                                     }
                                 }
                             })}

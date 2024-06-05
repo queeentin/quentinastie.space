@@ -268,10 +268,13 @@ body{
                         }
 
                         .images{
-                            grid-template-columns: repeat(2, 1fr);
-                            display: grid;
-                            grid-auto-rows: min-content;
-                            grid-gap: 1em;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1em;
+
+                            > *{
+                                align-self: stretch;
+                            }
 
                             figure{
                                 position: relative;
@@ -285,13 +288,22 @@ body{
                                     width: 100%;
                                 }
                             }
-
-                            .solo{
-                                grid-column: span 2;
-                            }
                             
-                            .duo{
-                                grid-column: span 1;
+                            .inline{
+
+                                > div{
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 1em;
+                                    overflow: auto;
+                                    scrollbar-width: none;
+                                    scroll-snap-type: x mandatory;
+
+                                    figure{
+                                        flex: 1;
+                                        scroll-snap-align: center;
+                                    }
+                                }
                             }
                         }
 
@@ -439,6 +451,18 @@ body{
 
                                 #details{
                                     grid-column: unset;
+                                }
+                            }
+
+                            .images{
+                                .inline{
+                                    div{
+                                        figure{
+                                            flex: none;
+                                            width: 85%;
+                                            flex-shrink: 0;
+                                        }
+                                    }
                                 }
                             }
                         }

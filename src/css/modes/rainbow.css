@@ -1,12 +1,12 @@
-#root {
+#home {
   background: linear-gradient(white, var(--bg-color));
 }
-#root > header {
+#home header {
   color: var(--font-color);
 }
-#root > header .icons li svg {
+#home header .icons li svg {
   stroke: var(--font-color) !important;
 }
-#root > header .icons li:last-child {
+#home header .icons li:last-child {
   opacity: 1 !important;
 }/*# sourceMappingURL=rainbow.css.map */

@@ -1,8 +1,8 @@
 body{
-    #root{
+    #home{
         background: linear-gradient(to top, #fddb92 0%, #73b7ff 100%);
 
-        > header{
+        header{
             #clock{
                 .icons{
                     li:nth-child(2){

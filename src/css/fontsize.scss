@@ -45,28 +45,28 @@ $fontsize: (
   }
 }
 
-#root {
-    > header{
-        > div{
-            @include fontsize("large");
-
-            h4{
-                @include fontsize("small");
-            }
-        }
-    }
-    footer{
+#home {
+  header{
+    > div{
         @include fontsize("large");
 
-        p:first-child{
-            @include fontsize("small");
-        }
+      h4{
+          @include fontsize("small");
+      }
     }
-    #content{
-        @include fontsize("large");
+  }
+  footer{
+    @include fontsize("large");
 
-        dt{
-            @include fontsize("small");
-        }
+    p:first-child{
+        @include fontsize("small");
     }
+  }
+}
+#content{
+  @include fontsize("large");
+
+  dt{
+      @include fontsize("small");
+  }
 }

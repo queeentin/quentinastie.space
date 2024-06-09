@@ -1,18 +1,18 @@
-body #root {
+body #home {
   background: linear-gradient(to top, #D88B19, #132758);
 }
-body #root > header {
+body #home header {
   color: white;
 }
-body #root > header .icons svg {
+body #home header .icons svg {
   filter: invert(100%);
 }
-body #root > header .icons li:nth-child(3) {
+body #home header .icons li:nth-child(3) {
   opacity: 1 !important;
 }
-body #root > figure {
+body #home > figure {
   mix-blend-mode: screen !important;
 }
-body #root > figure img {
+body #home > figure img {
   filter: invert(100%);
 }/*# sourceMappingURL=evening.css.map */

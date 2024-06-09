@@ -49,21 +49,22 @@
   }
 }
 
-#root > header > div {
+#home header > div {
   font-size: var(--font-size--large);
 }
-#root > header > div h4 {
+#home header > div h4 {
   font-size: var(--font-size--small);
 }
-#root footer {
+#home footer {
   font-size: var(--font-size--large);
 }
-#root footer p:first-child {
+#home footer p:first-child {
   font-size: var(--font-size--small);
 }
-#root #content {
+
+#content {
   font-size: var(--font-size--large);
 }
-#root #content dt {
+#content dt {
   font-size: var(--font-size--small);
 }/*# sourceMappingURL=fontsize.css.map */

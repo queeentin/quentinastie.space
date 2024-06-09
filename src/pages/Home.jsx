@@ -25,10 +25,10 @@ export function Home() {
   }, [location]);
 
   return (
-    <>
+    <div id="home">
       <Icon />
       <Header />
       <Footer />
-    </>
+    </div>
   );
 }

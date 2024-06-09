@@ -13,6 +13,13 @@ export function Project() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
 
+    const descriptionList = [];
+    for (let i = 0; i < projects.length ; i++){
+        var description = projects[i].informations;
+        descriptionList.push(description);
+    }
+    console.log(descriptionList);
+
     useEffect(() => {
         const selectedProject = projects.find(project => project.id === id);
         if (selectedProject) {
@@ -78,25 +85,24 @@ export function Project() {
                         </div>
                         <div className="images">
                             {project.images.map((item, index) => {
+                                //console.log(item);
                                 if (Array.isArray(item) && item.length > 0) {
                                     return (
                                         <div key={index} className="inline">
-                                            <div>
-                                                {item.map((subItem, subIndex) => {
-                                                    if (subItem.source.endsWith("mp4")) {
-                                                        return <figure key={subIndex}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem.source} /></figure>;
-                                                    } else {
-                                                        return <figure key={subIndex}><img src={"./images/" + id + "/" + subItem.source} /></figure>
-                                                    }
-                                                })}
-                                            </div>
+                                        {item.map((subItem, subIndex) => {
+                                            if (subItem.endsWith("mp4")) {
+                                                return <figure key={subIndex}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} /></figure>;
+                                            } else {
+                                                return <figure key={subIndex}><img src={"./images/" + id + "/" + subItem} /></figure>
+                                            }
+                                        })}
                                         </div>
-                                    );
+                                    )
                                 } else {
-                                    if (item.source.endsWith("mp4")) {
-                                        return <figure key={index}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item.source} /></figure>;
+                                    if (item.endsWith("mp4")) {
+                                        return <figure key={index}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} /></figure>;
                                     } else {
-                                        return <figure key={index}><img src={"./images/" + id + "/" + item.source} /></figure>
+                                        return <figure key={index}><img src={"./images/" + id + "/" + item} /></figure>
                                     }
                                 }
                             })}

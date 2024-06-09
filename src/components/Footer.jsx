@@ -11,9 +11,9 @@ export function Footer() {
     useEffect(() => {
         const iconImg = document.getElementById("iconImg");
         const scrolledElement = document.getElementById("links");
-        const body = document.querySelector("body");
+        const home = document.querySelector("#home");
 
-        body.addEventListener("wheel", (event) => {
+        home.addEventListener("wheel", (event) => {
             event.preventDefault();
           
             scrolledElement.scrollBy({

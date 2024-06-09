@@ -16,164 +16,184 @@ body{
     }
 
     #root{
-        position: fixed;
         height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: auto;
-        box-sizing: border-box;
         
-        > header{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, auto);
-            grid-gap: 1em 4em;
-            margin: 1em;
+        #home{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: auto;
+            box-sizing: border-box;    
 
-            > div{
-                display: flex;
-                align-items: flex-start;
-                gap: 1em;
+            header{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, auto);
+                grid-gap: 1em 4em;
+                margin: 1em;
+                align-items: baseline;
 
-                > h4{
-                    // flex: 1;
-                    width: 8em;
+                > div{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1em;
+
+                    > h4{
+                        // flex: 1;
+                        width: 8em;
+                    }
+
+                    > ul{
+                        flex: 2;
+                    }
                 }
 
-                > ul{
-                    flex: 2;
+                #name{
+                    grid-area: 1/1/2/2;
+
+                    h1{
+                        flex: 1;
+                        font-weight: normal;
+                        margin: 0;
+                    }
                 }
-            }
 
-            #name{
-                grid-area: 1/1/2/2;
+                #clock{
+                    grid-area: 2/1/3/2;
 
-                h1{
-                    flex: 1;
+                    ul{
+                        display: flex;
+                        gap: 1em;
+                        flex-wrap: wrap;
+
+                        li{
+                            opacity: 0.3;
+                            cursor: pointer;
+
+                            svg{
+                                height: 1.5em;
+                                width: 1.5em;
+                                fill: none;
+                                stroke: #000;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                            }
+                        }
+                    }
+                }
+
+                #lang{
+                    grid-area: 1/2/2/3;
+
+                    li{
+                        cursor: pointer;
+                        opacity: 0.3;
+                    }
+                    li.active{
+                        opacity: 1;
+                    }
+                }
+
+                #contact{
+                    grid-area: 2/2/3/3;
+
+                    a{
+                        text-decoration: none;
+                    }
+                }
+
+                #resume{
+                    grid-area: 1/3/4/5;
+
+                    > div{
+                        flex: 5;
+                    }
+                }
+
+                h4{
                     font-weight: normal;
                     margin: 0;
                 }
-            }
-
-            #clock{
-                grid-area: 2/1/3/2;
 
                 ul{
-                    display: flex;
-                    gap: 1em;
-                    flex-wrap: wrap;
+                    margin: 0;
+                    padding: 0;
 
                     li{
-                        opacity: 0.3;
-                        cursor: pointer;
-
-                        svg{
-                            height: 1.5em;
-                            width: 1.5em;
-                            fill: none;
-                            stroke: #000;
-                            stroke-linecap: round;
-                            stroke-linejoin: round;
-                        }
+                        list-style-type: none;
                     }
                 }
-            }
 
-            #lang{
-                grid-area: 1/2/2/3;
-
-                li{
-                    cursor: pointer;
-                    opacity: 0.3;
+                p{
+                    margin: 0;
                 }
-                li.active{
-                    opacity: 1;
-                }
+
             }
 
-            #contact{
-                grid-area: 2/2/3/3;
+            footer{
 
-                a{
-                    text-decoration: none;
-                }
-            }
+                #links{
+                display: flex;
+                gap: 1em;
+                padding: 1em;
+                box-sizing: border-box;
+                width: 100%;
+                overflow-x: auto;
 
-            #resume{
-                grid-area: 1/3/4/5;
+                    a{
+                        text-decoration: none;
+                        background-color: rgba(255, 255, 255, 0.7);
+                        padding: 0.5em 1em 0.5em 0.5em;
+                        border-radius: 10px;    
+                        white-space: nowrap;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1em;
+                        backdrop-filter: blur(5px);
+                        
+                        figure{
+                            // display: none;
+                            height: 3em;
+                            width: 3em;
+                            background-color: white;
+                            border-radius: 50px;
+                            overflow: hidden;
+                            margin: 0;
 
-                > div{
-                    flex: 5;
-                }
-            }
+                            img{
+                                height: 100%;
+                            }
+                        }
 
-            h4{
-                font-weight: normal;
-                margin: 0;
-            }
-
-            ul{
-                margin: 0;
-                padding: 0;
-
-                li{
-                    list-style-type: none;
-                }
-            }
-
-            p{
-                margin: 0;
-            }
-
-        }
-
-        footer{
-
-            #links{
-            display: flex;
-            gap: 1em;
-            padding: 1em;
-            box-sizing: border-box;
-            width: 100%;
-            overflow-x: auto;
-
-                a{
-                    text-decoration: none;
-                    background-color: rgba(255, 255, 255, 0.7);
-                    padding: 0.5em 1em 0.5em 0.5em;
-                    border-radius: 10px;    
-                    white-space: nowrap;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    gap: 1em;
-                    backdrop-filter: blur(5px);
-                    
-                    figure{
-                        // display: none;
-                        height: 3em;
-                        width: 3em;
-                        background-color: white;
-                        border-radius: 50px;
-                        overflow: hidden;
-                        margin: 0;
-
-                        img{
-                            height: 100%;
+                        p{
+                            margin: 0;
                         }
                     }
 
-                    p{
-                        margin: 0;
+                    a:hover{
+                        background-color: rgba(255, 255, 255, 0.5);
                     }
                 }
+            }
 
-                a:hover{
-                    background-color: rgba(255, 255, 255, 0.5);
+            #icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                z-index: -10;
+                mix-blend-mode: multiply;
+                img{
+                    height: 60vh;
+                    display: none;
                 }
             }
+    
         }
 
         #content{
@@ -191,15 +211,14 @@ body{
                 height: 100%;
                 overflow-y: scroll;
                 scrollbar-color: black transparent;
-                padding: 1em;
+                padding: 1rem;
                 box-sizing: border-box;
 
                 > div{
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     align-items: start;
-                    gap: 1em 4em;
-                    width: calc(100vw - 2em);
+                    gap: 1em 4rem;
 
                     .close{
                         text-decoration: none;
@@ -255,6 +274,7 @@ body{
                             grid-template-columns: repeat(3, 1fr);
                             gap: 1em 4em;
                             margin-bottom: 2em;
+                            align-items: baseline;
 
                             #datas{
                                 display: grid;
@@ -290,39 +310,22 @@ body{
                             }
                             
                             .inline{
+                                display: flex;
+                                flex-direction: row;
+                                gap: 1em;
+                                overflow: auto;
+                                scrollbar-width: none;
+                                scroll-snap-type: x mandatory;
 
-                                > div{
-                                    display: flex;
-                                    flex-direction: row;
-                                    gap: 1em;
-                                    overflow: auto;
-                                    scrollbar-width: none;
-                                    scroll-snap-type: x mandatory;
-
-                                    figure{
-                                        flex: 1;
-                                        scroll-snap-align: center;
-                                    }
+                                figure{
+                                    flex: 1;
+                                    scroll-snap-align: center;
                                 }
                             }
                         }
 
                     }
                 }
-            }
-        }
-
-        #icon{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin: 0;
-            z-index: -10;
-            mix-blend-mode: multiply;
-            img{
-                height: 60vh;
-                display: none;
             }
         }
     }
@@ -332,13 +335,20 @@ body{
 
 @media (max-width: 576px) {
     body{
-
         #root{
-            > header{
-                > div{
-                    flex-direction: column;
-                    gap: 0.5em;
-                }
+            #home{
+                header{
+                    > div{
+                        flex-direction: column;
+                        gap: 0.5em;
+                    }
+                }    
+                #icon{
+                    img{
+                        height: auto;
+                        width: 80vw;
+                    }
+                }    
             }
             #content{
                 > div{
@@ -354,12 +364,6 @@ body{
                     }
                 }
             }
-            #icon{
-                img{
-                    height: auto;
-                    width: 80vw;
-                }
-            }
         }
     }
 }
@@ -368,7 +372,6 @@ body{
 
 @media (min-width: 576px) and (max-width: 768px) {
     body{
-        
         #root{
             #content{
                 > div{
@@ -391,33 +394,37 @@ body{
 /* Sur petits et très petits écrans */
 
 @media (max-width: 768px) {
-    body{
+    body{        
         #root{
-            > header{
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3,auto);
-                grid-gap: 1em;
+            #home{
+                header{
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3,auto);
+                    grid-gap: 1em;
 
-                #clock{
-                    grid-area: 1/2/2/3;
+                    #clock{
+                        grid-area: 1/2/2/3;
+                    }
+
+                    #lang{
+                        grid-area: 2/1/2/2;
+                    }
+
+                    #resume{
+                        grid-area: 3/1/4/3;
+                    }
                 }
 
-                #lang{
-                    grid-area: 2/1/2/2;
+                footer{
+                    position: sticky;
+                    bottom: 0;
                 }
-
-                #resume{
-                    grid-area: 3/1/4/3;
-                }
-            }
-
-            footer{
-                position: sticky;
-                bottom: 0;
             }
 
             #content{
                 .scroller{
+                    padding: 0;
+
                     > div{
                         grid-template-columns: none;
                         grid-template-rows: repeat(3, auto);
@@ -425,13 +432,15 @@ body{
                         .close{
                             display: block;
                             position: sticky;
-                            top: 0;
+                            top: 1rem;
+                            margin: 1rem;
                         }
 
                         header{
                             position: relative;  
                             grid-column: unset;
                             grid-template-rows: unset;
+                            margin: 0 1rem;
                             
                             .close{
                                 display: none;
@@ -443,6 +452,7 @@ body{
 
                             .infos{
                                 grid-template-columns: unset;
+                                padding: 0 1rem;
 
                                 #datas{
                                     grid-column: unset;
@@ -455,12 +465,24 @@ body{
                             }
 
                             .images{
+                                margin-bottom: 1rem;
+                                
+                                > figure{
+                                    margin: 0 1rem;
+                                }
                                 .inline{
-                                    div{
-                                        figure{
-                                            flex: none;
-                                            width: 85%;
-                                            flex-shrink: 0;
+
+                                    figure{
+                                        flex: none;
+                                        width: 85%;
+                                        flex-shrink: 0;
+
+                                        &:first-child{
+                                            margin: 0 0 0 1rem;
+                                        }
+
+                                        &:last-child{
+                                            margin: 0 1rem 0 0;
                                         }
                                     }
                                 }
@@ -478,16 +500,18 @@ body{
 @media (min-width: 768px) and (max-width: 1200px){
     body{
         #root{
-            > header{
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, auto);
+            #home{
+                header{
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, auto);
 
-                #contact{
-                    grid-area: 1/3/2/4;
-                }
+                    #contact{
+                        grid-area: 1/3/2/4;
+                    }
 
-                #resume{
-                    grid-area: 2/2/3/4;
+                    #resume{
+                        grid-area: 2/2/3/4;
+                    }
                 }
             }
             

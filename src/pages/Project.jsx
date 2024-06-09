@@ -13,13 +13,6 @@ export function Project() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
 
-    const descriptionList = [];
-    for (let i = 0; i < projects.length ; i++){
-        var description = projects[i].informations;
-        descriptionList.push(description);
-    }
-    console.log(descriptionList);
-
     useEffect(() => {
         const selectedProject = projects.find(project => project.id === id);
         if (selectedProject) {

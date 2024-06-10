@@ -72,7 +72,7 @@ export function Project() {
                             <div id="details">
                                 <dl>
                                     <dt>{t("labels.infos")}</dt>
-                                    <dd>{project.informations}</dd>
+                                    <dd>{project.informations[language]}</dd>
                                 </dl>
                             </div>
                         </div>

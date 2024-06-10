@@ -4,6 +4,13 @@ export function Clock() {
     const [time, setTime] = useState(new Date());
     const [daytime, setDaytime] = useState("");
     const [mode, setMode] = useState("");
+    const [styles, setStyles] = useState([
+        {"morning" : ["linear-gradient(#fffadc, #ffbbe9)", "#000", "multiply", "none", "1", "0.3", "0.3", "0.3", "0.3"]},
+        {"afternoon" : ["linear-gradient(to top, #fddb92 0%, #73b7ff 100%)", "#000", "multiply", "none", "0.3", "1", "0.3", "0.3", "0.3"]},
+        {"evening" : ["linear-gradient(to top,#D88B19, #132758)", "#FFF", "screen", "invert(100%)", "0.3", "0.3", "1", "0.3", "0.3"]},
+        {"night" : ["linear-gradient(#2f1862, #6847ae)", "#FFF", "screen", "invert(100%)", "0.3", "0.3", "0.3", "1", "0.3"]},
+        {"rainbow" : ["","", "multiply", "none", "0.3", "0.3", "0.3", "0.3", "1"]}
+    ]);
 
     useEffect(() => {
         defineMode();
@@ -55,15 +62,18 @@ export function Clock() {
     };
     
     const updateSheet = () => {
-        const styleSheets = document.styleSheets;
-        for (let i = 1; i < styleSheets.length; i++){
-            const sheet = styleSheets[i];
-            const sheetName = sheet.ownerNode.attributes[1].nodeValue;
-            if (sheetName.includes(mode)){
-                sheet.disabled = false;
-            } else {
-                sheet.disabled = true;
-            }
+        let styleObject = styles.find(style => style[mode]);
+        if (styleObject) {
+            let modeStyles = styleObject[mode];
+            document.getElementById("home").style.background = modeStyles[0];
+            document.querySelector("#home > header").style.color = modeStyles[1];
+            document.querySelector("#home > figure").style.mixBlendMode = modeStyles[2];
+            document.getElementById("iconImg").style.webkitFilter = modeStyles[3];
+            document.querySelector(".icons li:nth-child(1)").style.opacity = modeStyles[4];
+            document.querySelector(".icons li:nth-child(2)").style.opacity = modeStyles[5];
+            document.querySelector(".icons li:nth-child(3)").style.opacity = modeStyles[6];
+            document.querySelector(".icons li:nth-child(4)").style.opacity = modeStyles[7];
+            document.querySelector(".icons li:nth-child(5)").style.opacity = modeStyles[8];
         }
     };
 
@@ -79,10 +89,8 @@ export function Clock() {
     function addNewstyles() {
         var color1 = getRandomColor();
         var color2 = getRandomColor();
-        var color3 = getRandomColor();
-        const newStyles = "body {--bg-color: " + color1 + "; --font-color: " + color2 + ";}";
-        const feuilleDeStyle = document.styleSheets[5];
-        feuilleDeStyle.insertRule(newStyles, feuilleDeStyle.cssRules.length);    
+        styles[4]["rainbow"] = ["linear-gradient(white, " + color1 + ")", color2, "multiply", "none", "0.3", "0.3", "0.3", "0.3", "1"];
+        updateSheet();
     }
 
     return (
@@ -93,7 +101,7 @@ export function Clock() {
             <li onClick={() => changeMode("afternoon")}><svg><use xlinkHref="./assets/icons/icon_afternoon.svg#afternoon"></use></svg></li>
             <li onClick={() => changeMode("evening")}><svg><use xlinkHref="./assets/icons/icon_evening.svg#evening"></use></svg></li>
             <li onClick={() => changeMode("night")}><svg><use xlinkHref="./assets/icons/icon_night.svg#night"></use></svg></li>
-            <li onClick={() => {changeMode("rainbow"); addNewstyles();}}><svg><use xlinkHref="./icons/icon_rainbow.svg#rainbow"></use></svg></li>
+            <li onClick={() => {addNewstyles(); changeMode("rainbow");}}><svg><use xlinkHref="./assets/icons/icon_rainbow.svg#rainbow"></use></svg></li>
         </ul>
     </div>
     );

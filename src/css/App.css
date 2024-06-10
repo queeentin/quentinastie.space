@@ -159,6 +159,7 @@ body #root #home #icon {
 body #root #home #icon img {
   height: 60vh;
   display: none;
+  filter: invert(1);
 }
 body #root #content {
   position: fixed;

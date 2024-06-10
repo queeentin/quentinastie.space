@@ -36,34 +36,43 @@ export const projects = [
         "icon": "icon.svg"
     },
     {
-        "id": "journees-matrimoine-montreuil",
+        "id": "creation-en-cours",
         "title": {
-            "fr": "Journées du Matrimoine",
-            "en": "Women heritage days"
+            "fr": "Création en cours",
+            "en": "Création en cours"
         },
-        "date": "2024",
-        "for": "Mairie de Montreuil",
+        "date": "2022",
+        "for": "Ateliers Médicis",
         "informations": {
-            "fr": "[Proposition non retenue] Les Journées du Matrimoine sont dédiées à la mise en lumière et à la célébration de l’héritage culturel, sportif, politique, artistique et intellectuel des femmes à Montreuil.",
-            "en": "[Unselected Proposal] Les Journées du Matrimoine are dedicated to highlighting and celebrating the cultural, sporting, political, artistic, and intellectual heritage of women in Montreuil."
+            "fr": "Travail de recherche et de création autour de la visualisation de données. Ce projet a été mené dans le cadre de la résidence \"Création en cours\". Il s'articule avec un travail de transmission auprès des élèves de l'école primaire de Saulgé.",
+            "en": "Research and creation work on data visualization. This project was conducted as part of the \"Création en cours\" residency. It includes a transmission component with students from Saulgé primary school."
         },
         "category": {
-            "fr": "Affiche",
-            "en": "Poster"
+            "fr": "Résidence",
+            "en": "Residence Program"
         },
         "images": [
-            "mockup-affiches.png",
-            ["animation-M.mp4",
-                "animation-D.mp4",
-                "animation-J.mp4"],
-            "planche-lettres.jpg",
-            ["animation-01.mp4",
-                "animation-02.mp4"],
-            // "leaflet.jpg",
-            ["image-1.png",
-                "photo-tramway-NB.jpg"],
+            "cover.jpg",
+            ["IMG_1382.jpg",
+                "IMG_1442.jpg"],
+            ["animation-dates.gif",
+                "animation-famille.gif"],
+            ["animation-gouts.gif",
+                "animation-lieux-dits.gif"],
+            ["animation-prenoms.gif",
+                "animation-tailles.gif"],
+            ["riso.mp4",
+                "IMG_8560.jpg"],
+            "double-page-01.jpg",
+            "double-page-02.jpg",
+            "double-page-03.jpg",
+            "double-page-04.jpg",
+            ["IMG_8613.jpg",
+                "invitation.mp4"],
+            "expo-1.jpg",
+            "expo-2.jpg"
         ],
-        "icon": "icon.svg"
+        "icon": "icon.png"
     },
     {
         "id": "paul-dagorne",
@@ -210,6 +219,67 @@ export const projects = [
         "icon": "icon.png"
     },
     {
+        "id": "alphabets-collaboratifs",
+        "title": {
+            "fr": "Alphabets collaboratifs",
+            "en": "Collaborative alphabets"
+        },
+        "date": "2023",
+        "for": "Prep'art Paris",
+        "informations": {
+            "fr": "Atelier de création d'alphabets typographiques avec des étudiant·es à partir de différentes grilles inspirées du travail de M. Da Vega. Chaque lettre est ensuite déposée sur un serveur en python puis rendue dans une page web qu'il est possible d'imprimer.",
+            "en": "Typographic alphabet creation workshop with students using different grids inspired by the work of M. Da Vega. Each letter is then uploaded to a Python server and displayed on a web page that can be printed."
+        },
+        "category": {
+            "fr": "Enseignement",
+            "en": "Teaching"
+        },
+        "images": [
+            "affiche-03.jpg",
+            ["classe-soir-alphabet-5.gif",
+                "classe-I-alphabet-2.gif",
+                "classe-B-alphabet-3.gif"],
+            ["classe-B-alphabet-4.gif",
+                "classe-G-alphabet-5.gif"],
+            "videoscreen-01.mp4",
+            ["affiche-01.jpg",
+                "affiche-02.jpg"],
+            "videoscreen-02.mp4",
+            "affiche-04.jpg",
+            "videoscreen-03.mp4",
+            "P1010259.jpg"
+        ],
+        "icon": "icon.png"
+    },
+    {
+        "id": "cqrdnm",
+        "title": {
+            "fr": "Ce qu'il reste de nous-même",
+            "en": "Ce qu'il reste de nous-même"
+        },
+        "date": "2022",
+        "for": "Chapelle XIV",
+        "informations": {
+            "fr": "Affiche et fanzines sérigraphiés conçus pour accompagner l'exposition \"Ce qu'il reste de nous-même\" à la galerie Chapelle XIV.",
+            "en": "Screen-printed poster and fanzines designed to accompany the exhibition \"Ce qu'il reste de nous-même\" held at the Chapelle XIV gallery."
+        },
+        "category": {
+            "fr": "Affiche, édition",
+            "en": "Poster, fanzine"
+        },
+        "images": [
+            "IMG_9948.jpg",
+            ["IMG_5690.jpg",
+                "IMG_5693.jpg"],
+            "scan-1.jpg",
+            "scan-2.jpg",
+            "scan-3.jpg",
+            ["IMG_9957.jpg",
+                "IMG_9958.jpg"]
+        ],
+        "icon": "icon.svg"
+    },
+    {
         "id": "ecume-studio",
         "title": {
             "fr": "Écume Studio",
@@ -273,102 +343,32 @@ export const projects = [
         "icon": "icon.svg"
     },
     {
-        "id": "alphabets-collaboratifs",
+        "id": "journees-matrimoine-montreuil",
         "title": {
-            "fr": "Alphabets collaboratifs",
-            "en": "Collaborative alphabets"
+            "fr": "Journées du Matrimoine",
+            "en": "Women heritage days"
         },
-        "date": "2023",
-        "for": "Prep'art Paris",
+        "date": "2024",
+        "for": "Mairie de Montreuil",
         "informations": {
-            "fr": "Atelier de création d'alphabets typographiques avec des étudiant·es à partir de différentes grilles inspirées du travail de M. Da Vega. Chaque lettre est ensuite déposée sur un serveur en python puis rendue dans une page web qu'il est possible d'imprimer.",
-            "en": "Typographic alphabet creation workshop with students using different grids inspired by the work of M. Da Vega. Each letter is then uploaded to a Python server and displayed on a web page that can be printed."
+            "fr": "[Proposition non retenue] Les Journées du Matrimoine sont dédiées à la mise en lumière et à la célébration de l’héritage culturel, sportif, politique, artistique et intellectuel des femmes à Montreuil.",
+            "en": "[Unselected Proposal] Les Journées du Matrimoine are dedicated to highlighting and celebrating the cultural, sporting, political, artistic, and intellectual heritage of women in Montreuil."
         },
         "category": {
-            "fr": "Enseignement",
-            "en": "Teaching"
+            "fr": "Affiche",
+            "en": "Poster"
         },
         "images": [
-            "affiche-03.jpg",
-            ["classe-soir-alphabet-5.gif",
-                "classe-I-alphabet-2.gif",
-                "classe-B-alphabet-3.gif"],
-            ["classe-B-alphabet-4.gif",
-                "classe-G-alphabet-5.gif"],
-            "videoscreen-01.mp4",
-            ["affiche-01.jpg",
-                "affiche-02.jpg"],
-            "videoscreen-02.mp4",
-            "affiche-04.jpg",
-            "videoscreen-03.mp4",
-            "P1010259.jpg"
-        ],
-        "icon": "icon.png"
-    },
-    {
-        "id": "creation-en-cours",
-        "title": {
-            "fr": "Création en cours",
-            "en": "Création en cours"
-        },
-        "date": "2022",
-        "for": "Ateliers Médicis",
-        "informations": {
-            "fr": "Travail de recherche et de création autour de la visualisation de données. Ce projet a été mené dans le cadre de la résidence \"Création en cours\". Il s'articule avec un travail de transmission auprès des élèves de l'école primaire de Saulgé.",
-            "en": "Research and creation work on data visualization. This project was conducted as part of the \"Création en cours\" residency. It includes a transmission component with students from Saulgé primary school."
-        },
-        "category": {
-            "fr": "Résidence",
-            "en": "Residence Program"
-        },
-        "images": [
-            "cover.jpg",
-            ["IMG_1382.jpg",
-                "IMG_1442.jpg"],
-            ["animation-dates.gif",
-                "animation-famille.gif"],
-            ["animation-gouts.gif",
-                "animation-lieux-dits.gif"],
-            ["animation-prenoms.gif",
-                "animation-tailles.gif"],
-            ["riso.mp4",
-                "IMG_8560.jpg"],
-            "double-page-01.jpg",
-            "double-page-02.jpg",
-            "double-page-03.jpg",
-            "double-page-04.jpg",
-            ["IMG_8613.jpg",
-                "invitation.mp4"],
-            "expo-1.jpg",
-            "expo-2.jpg"
-        ],
-        "icon": "icon.png"
-    },
-    {
-        "id": "cqrdnm",
-        "title": {
-            "fr": "Ce qu'il reste de nous-même",
-            "en": "Ce qu'il reste de nous-même"
-        },
-        "date": "2022",
-        "for": "Chapelle XIV",
-        "informations": {
-            "fr": "Affiche et fanzines sérigraphiés conçus pour accompagner l'exposition \"Ce qu'il reste de nous-même\" à la galerie Chapelle XIV.",
-            "en": "Screen-printed poster and fanzines designed to accompany the exhibition \"Ce qu'il reste de nous-même\" held at the Chapelle XIV gallery."
-        },
-        "category": {
-            "fr": "Affiche, édition",
-            "en": "Poster, fanzine"
-        },
-        "images": [
-            "IMG_9948.jpg",
-            ["IMG_5690.jpg",
-                "IMG_5693.jpg"],
-            "scan-1.jpg",
-            "scan-2.jpg",
-            "scan-3.jpg",
-            ["IMG_9957.jpg",
-                "IMG_9958.jpg"]
+            "mockup-affiches.png",
+            ["animation-M.mp4",
+                "animation-D.mp4",
+                "animation-J.mp4"],
+            "planche-lettres.jpg",
+            ["animation-01.mp4",
+                "animation-02.mp4"],
+            // "leaflet.jpg",
+            ["image-1.png",
+                "photo-tramway-NB.jpg"],
         ],
         "icon": "icon.svg"
     },

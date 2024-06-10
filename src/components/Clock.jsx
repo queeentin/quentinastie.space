@@ -67,6 +67,7 @@ export function Clock() {
             let modeStyles = styleObject[mode];
             document.getElementById("home").style.background = modeStyles[0];
             document.querySelector("#home > header").style.color = modeStyles[1];
+            document.querySelectorAll(".icons li svg").forEach(function(svgElement) {svgElement.style.stroke = modeStyles[1];});
             document.querySelector("#home > figure").style.mixBlendMode = modeStyles[2];
             document.getElementById("iconImg").style.webkitFilter = modeStyles[3];
             document.querySelector(".icons li:nth-child(1)").style.opacity = modeStyles[4];

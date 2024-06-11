@@ -1,37 +1,37 @@
 @font-face {
     font-family: "Ductus Regular";
-    src: url("./ductus/regular/DuctusRegular.woff2") format("woff2"),
-        url("./ductus/regular/DuctusRegular.woff") format("woff");
+    src: url("assets/ductus/regular/DuctusRegular.woff2") format("woff2"),
+        url("assets/ductus/regular/DuctusRegular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Ductus Geometric";
-    src: url("./ductus/regular/DuctusGeometric.woff2") format("woff2"),
-        url("./ductus/regular/DuctusGeometric.woff") format("woff");
+    src: url("assets/ductus/regular/DuctusGeometric.woff2") format("woff2"),
+        url("assets/ductus/regular/DuctusGeometric.woff") format("woff");
 }
 
 @font-face {
     font-family: "Ductus Calligraphic";
-    src: url("./ductus/regular/DuctusCalligraphic.woff2") format("woff2"),
-        url("./ductus/regular/DuctusCalligraphic.woff") format("woff");
+    src: url("assets/ductus/regular/DuctusCalligraphic.woff2") format("woff2"),
+        url("assets/ductus/regular/DuctusCalligraphic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Ductus Regular Mono";
-    src: url("./ductus/monospace/DuctusMonoRegular.woff2") format("woff2"),
-        url("./ductus/monospace/DuctusMonoRegular.woff") format("woff");
+    src: url("assets/ductus/monospace/DuctusMonoRegular.woff2") format("woff2"),
+        url("assets/ductus/monospace/DuctusMonoRegular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Ductus Geometric Mono";
-    src: url("./ductus/monospace/DuctusMonoGeometric.woff2") format("woff2"),
-        url("./ductus/monospace/DuctusMonoGeometric.woff") format("woff");
+    src: url("assets/ductus/monospace/DuctusMonoGeometric.woff2") format("woff2"),
+        url("assets/ductus/monospace/DuctusMonoGeometric.woff") format("woff");
 }
 
 @font-face {
     font-family: "Ductus Calligraphic Mono";
-    src: url("./ductus/monospace/DuctusMonoCalligraphic.woff2") format("woff2"),
-        url("./ductus/monospace/DuctusMonoCalligraphic.woff") format("woff");
+    src: url("assets/ductus/monospace/DuctusMonoCalligraphic.woff2") format("woff2"),
+        url("assets/ductus/monospace/DuctusMonoCalligraphic.woff") format("woff");
 }
 
 /* FONT-SIZES */

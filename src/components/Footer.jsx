@@ -10,17 +10,16 @@ export function Footer() {
 
     useEffect(() => {
         const iconImg = document.getElementById("iconImg");
-        const scrolledElement = document.getElementById("links");
-        const home = document.querySelector("#home");
+        // const scrolledElement = document.getElementById("links");
+        // const home = document.querySelector("#home");
 
-        home.addEventListener("wheel", (event) => {
-            event.preventDefault();
+        // home.addEventListener("wheel", (event) => {
+        //     event.preventDefault();
           
-            scrolledElement.scrollBy({
-              left: event.deltaY
-            });
-        });
-    
+        //     scrolledElement.scrollBy({
+        //       left: event.deltaY
+        //     });
+        // });
     }, []);
 
     function supportsHover() {

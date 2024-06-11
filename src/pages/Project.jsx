@@ -84,18 +84,18 @@ export function Project() {
                                         <div key={index} className="inline">
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
-                                                return <figure loading="lazy" key={subIndex}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} /></figure>;
+                                                return <figure key={subIndex}><video loading="lazy" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} /></figure>;
                                             } else {
-                                                return <figure loading="lazy" key={subIndex}><img src={"./images/" + id + "/" + subItem} /></figure>
+                                                return <figure key={subIndex}><img loading="lazy" src={"./images/" + id + "/" + subItem} /></figure>
                                             }
                                         })}
                                         </div>
                                     )
                                 } else {
                                     if (item.endsWith("mp4")) {
-                                        return <figure loading="lazy" key={index}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} /></figure>;
+                                        return <figure key={index}><video loading="lazy" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} /></figure>;
                                     } else {
-                                        return <figure loading="lazy" key={index}><img src={"./images/" + id + "/" + item} /></figure>
+                                        return <figure key={index}><img loading="lazy" src={"./images/" + id + "/" + item} /></figure>
                                     }
                                 }
                             })}

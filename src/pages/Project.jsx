@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { projects } from "../content/projects";
 import { useTranslation } from "react-i18next";
+import LazyLoad from "react-lazy-load";
 
 export function Project() {
 
@@ -84,18 +85,34 @@ export function Project() {
                                         <div key={index} className="inline">
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
-                                                return <figure key={subIndex}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} /></figure>;
+                                                return <figure key={subIndex}>
+                                                            <LazyLoad once threshold={0.1}>
+                                                                <video preload="none" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
+                                                            </LazyLoad>
+                                                        </figure>
                                             } else {
-                                                return <figure key={subIndex}><img src={"./images/" + id + "/" + subItem} /></figure>
+                                                return <figure key={subIndex}>
+                                                            <LazyLoad once threshold={0.1}>
+                                                                <img src={"./images/" + id + "/" + subItem} />
+                                                            </LazyLoad>
+                                                        </figure>
                                             }
                                         })}
                                         </div>
                                     )
                                 } else {
                                     if (item.endsWith("mp4")) {
-                                        return <figure key={index}><video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} /></figure>;
+                                        return <figure key={index}>
+                                                    <LazyLoad once threshold={0.1}>
+                                                        <video preload="none" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
+                                                    </LazyLoad>
+                                                </figure>
                                     } else {
-                                        return <figure key={index}><img src={"./images/" + id + "/" + item} /></figure>
+                                        return <figure key={index}>
+                                                <LazyLoad once threshold={0.1}>
+                                                    <img src={"./images/" + id + "/" + item} />
+                                                </LazyLoad>
+                                            </figure>
                                     }
                                 }
                             })}

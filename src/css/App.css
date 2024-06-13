@@ -3,6 +3,15 @@
 @import "fontsize.css";
 @import "reset.css";
 /* Sur grands écrans */
+.LazyLoad {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
 body {
   font-family: "Ductus Regular";
   height: 100vh;

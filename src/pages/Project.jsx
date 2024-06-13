@@ -86,13 +86,15 @@ export function Project() {
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={1000}>
-                                                                <video preload="none" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
+                                                            <LazyLoad offset={200}>
+                                                                <video autoPlay loop muted playsInline>
+                                                                    <source src={"./images/" + id + "/" + subItem} ></source>
+                                                                </video>
                                                             </LazyLoad>
                                                         </figure>
                                             } else {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={1000}>
+                                                            <LazyLoad offset={200}>
                                                                 <img src={"./images/" + id + "/" + subItem} />
                                                             </LazyLoad>
                                                         </figure>
@@ -103,13 +105,15 @@ export function Project() {
                                 } else {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
-                                                    <LazyLoad offset={1000}>
-                                                        <video preload="none" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
+                                                    <LazyLoad offset={200}>
+                                                        <video autoPlay loop muted playsInline>
+                                                            <source src={"./images/" + id + "/" + item} ></source>
+                                                        </video>
                                                     </LazyLoad>
                                                 </figure>
                                     } else {
                                         return <figure key={index}>
-                                                <LazyLoad offset={1000}>
+                                                <LazyLoad offset={200}>
                                                     <img src={"./images/" + id + "/" + item} />
                                                 </LazyLoad>
                                             </figure>

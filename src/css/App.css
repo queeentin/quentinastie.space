@@ -264,6 +264,7 @@ body #root #content .scroller > div main .images figure {
   margin: 0;
   border-radius: 20px;
   overflow: hidden;
+  background-color: #e6e6e6;
 }
 body #root #content .scroller > div main .images figure img, body #root #content .scroller > div main .images figure video {
   display: block;

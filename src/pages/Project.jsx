@@ -14,6 +14,29 @@ export function Project() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
 
+    function loadVideo(videoElement, src) {
+        fetch(src)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                videoElement.src = URL.createObjectURL(blob);
+                videoElement.play();
+            })
+            .catch(error => {
+                console.error('Video loading failed:', error);
+                setTimeout(() => loadVideo(videoElement, src), 3000);
+            });
+    }
+    
+    const videos = document.querySelectorAll('video[data-src]');
+    videos.forEach(video => {
+        loadVideo(video, video.dataset.src);
+    });
+
     useEffect(() => {
         const selectedProject = projects.find(project => project.id === id);
         if (selectedProject) {
@@ -86,15 +109,13 @@ export function Project() {
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={200}>
-                                                                <video autoPlay loop muted playsInline>
-                                                                    <source src={"./images/" + id + "/" + subItem} ></source>
-                                                                </video>
+                                                            <LazyLoad offset={100}>
+                                                                <video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
                                                             </LazyLoad>
                                                         </figure>
                                             } else {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={200}>
+                                                            <LazyLoad offset={100}>
                                                                 <img src={"./images/" + id + "/" + subItem} />
                                                             </LazyLoad>
                                                         </figure>
@@ -105,15 +126,13 @@ export function Project() {
                                 } else {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
-                                                    <LazyLoad offset={200}>
-                                                        <video autoPlay loop muted playsInline>
-                                                            <source src={"./images/" + id + "/" + item} ></source>
-                                                        </video>
+                                                    <LazyLoad offset={100}>
+                                                        <video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
                                                     </LazyLoad>
                                                 </figure>
                                     } else {
                                         return <figure key={index}>
-                                                <LazyLoad offset={200}>
+                                                <LazyLoad offset={100}>
                                                     <img src={"./images/" + id + "/" + item} />
                                                 </LazyLoad>
                                             </figure>

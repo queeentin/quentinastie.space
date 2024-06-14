@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { projects } from "../content/projects";
 import { useTranslation } from "react-i18next";
-import LazyLoad from "react-lazy-load";
 
 export function Project() {
 
@@ -13,16 +12,6 @@ export function Project() {
 
     const { id } = useParams();
     const [project, setProject] = useState(null);
-    
-    // useEffect(() => {
-    //     const medias = document.querySelectorAll("#content img, #content video");
-    //     console.log(medias);
-
-    //     medias.forEach((element) => {
-    //         const media = element.src;
-    //         console.log(media.width, media.height);
-    //     });
-    // });
 
     useEffect(() => {
         const selectedProject = projects.find(project => project.id === id);
@@ -30,6 +19,50 @@ export function Project() {
             setProject(selectedProject);
         }
     }, [id]);
+
+    // lazyload
+
+    useEffect(() => {
+        const lazyLoadElements = document.querySelectorAll(".lazyload");
+
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.9
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const src = entry.target.getAttribute("data-src");
+                    if (entry.target.classList.contains("video")) {
+                        const video = document.createElement("video");
+                        video.src = src;
+                        video.autoplay = true;
+                        video.loop = true;
+                        video.playsinline = true;
+                        video.muted = true;
+                        video.addEventListener('loadeddata', () => {
+                            entry.target.classList.add('is-visible');
+                        });
+                        entry.target.appendChild(video);
+                    } else if (entry.target.classList.contains("img")) {
+                        const img = document.createElement("img");
+                        img.src = src;
+                        img.addEventListener('load', () => {
+                            entry.target.classList.add('is-visible');
+                        });
+                        entry.target.appendChild(img);
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        lazyLoadElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
 
     if (!project) {
         return null;
@@ -89,22 +122,17 @@ export function Project() {
                         </div>
                         <div className="images">
                             {project.images.map((item, index) => {
-                                //console.log(item);
                                 if (Array.isArray(item) && item.length > 0) {
                                     return (
                                         <div key={index} className="inline">
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={100}>
-                                                                <video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
-                                                            </LazyLoad>
+                                                            <div className="lazyload video" data-src={"./images/" + id + "/" + subItem}></div>
                                                         </figure>
                                             } else {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={100}>
-                                                                <img src={"./images/" + id + "/" + subItem} />
-                                                            </LazyLoad>
+                                                            <div className="lazyload img" data-src={"./images/" + id + "/" + subItem}></div>
                                                         </figure>
                                             }
                                         })}
@@ -113,16 +141,12 @@ export function Project() {
                                 } else {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
-                                                    <LazyLoad offset={100}>
-                                                        <video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
-                                                    </LazyLoad>
+                                                    <div className="lazyload video" data-src={"./images/" + id + "/" + item}></div>
                                                 </figure>
                                     } else {
                                         return <figure key={index}>
-                                                <LazyLoad offset={100}>
-                                                    <img src={"./images/" + id + "/" + item} />
-                                                </LazyLoad>
-                                            </figure>
+                                                    <div className="lazyload img" data-src={"./images/" + id + "/" + item}></div>
+                                                </figure>
                                     }
                                 }
                             })}

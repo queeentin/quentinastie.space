@@ -3,7 +3,7 @@
 @import "fontsize.css";
 @import "reset.css";
 /* Sur grands écrans */
-.LazyLoad {
+.lazyload {
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }

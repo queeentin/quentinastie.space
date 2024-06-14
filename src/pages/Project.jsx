@@ -42,12 +42,14 @@ export function Project() {
                         video.loop = true;
                         video.playsinline = true;
                         video.muted = true;
-                        video.addEventListener('error', () => {
-                            const errorMessage = document.createElement('div');
-                            errorMessage.textContent = 'Erreur de chargement de la vidéo.';
-                            errorMessage.classList.add('error-message');
-                            entry.target.appendChild(errorMessage);
-                        });
+                        const reloadVideo = () => {
+                            video.load();
+                        };
+                        video.addEventListener('error', reloadVideo);
+                        // video.addEventListener('error', () => {
+                        //     console.log("erreur de chargement de la vidéo");
+                        //     entry.target.classList.add('is-visible');
+                        // });
                         video.addEventListener('loadeddata', () => {
                             entry.target.classList.add('is-visible');
                         });

@@ -42,7 +42,7 @@ export function Project() {
                         video.loop = true;
                         video.playsinline = true;
                         video.muted = true;
-                        element.addEventListener('error', () => {
+                        video.addEventListener('error', () => {
                             const errorMessage = document.createElement('div');
                             errorMessage.textContent = 'Erreur de chargement de la vidéo.';
                             errorMessage.classList.add('error-message');

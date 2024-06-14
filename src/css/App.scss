@@ -320,7 +320,7 @@ body{
                             }
 
                             > figure{
-                                // aspect-ratio: 3/2;
+                                aspect-ratio: 3/2;
                             }
                             
                             .inline{
@@ -334,6 +334,7 @@ body{
                                 figure{
                                     flex: 1;
                                     scroll-snap-align: center;
+                                    aspect-ratio: 1/1;
                                 }
                             }
                         }

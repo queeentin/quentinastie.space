@@ -14,15 +14,15 @@ export function Project() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
     
-    useEffect(() => {
-        const medias = document.querySelectorAll("#content img, #content video");
-        console.log(medias);
+    // useEffect(() => {
+    //     const medias = document.querySelectorAll("#content img, #content video");
+    //     console.log(medias);
 
-        medias.forEach((element) => {
-            const media = element.src;
-            console.log(media.width, media.height);
-        });
-    });
+    //     medias.forEach((element) => {
+    //         const media = element.src;
+    //         console.log(media.width, media.height);
+    //     });
+    // });
 
     useEffect(() => {
         const selectedProject = projects.find(project => project.id === id);
@@ -96,15 +96,15 @@ export function Project() {
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
-                                                            {/* <LazyLoad offset={100}> */}
-                                                                <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
-                                                            {/* </LazyLoad> */}
+                                                            <LazyLoad offset={100}>
+                                                                <video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
+                                                            </LazyLoad>
                                                         </figure>
                                             } else {
                                                 return <figure key={subIndex}>
-                                                            {/* <LazyLoad offset={100}> */}
+                                                            <LazyLoad offset={100}>
                                                                 <img src={"./images/" + id + "/" + subItem} />
-                                                            {/* </LazyLoad> */}
+                                                            </LazyLoad>
                                                         </figure>
                                             }
                                         })}
@@ -113,15 +113,15 @@ export function Project() {
                                 } else {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
-                                                    {/* <LazyLoad offset={100}> */}
-                                                        <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
-                                                    {/* </LazyLoad> */}
+                                                    <LazyLoad offset={100}>
+                                                        <video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
+                                                    </LazyLoad>
                                                 </figure>
                                     } else {
                                         return <figure key={index}>
-                                                {/* <LazyLoad offset={100}> */}
+                                                <LazyLoad offset={100}>
                                                     <img src={"./images/" + id + "/" + item} />
-                                                {/* </LazyLoad> */}
+                                                </LazyLoad>
                                             </figure>
                                     }
                                 }

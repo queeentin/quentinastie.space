@@ -143,7 +143,7 @@ export const projects = [
             ["carre-cc.jpg",
                 "carre-vf.jpg",
                 "carre-ad.jpg"],
-            "club-celest-1.mp4"
+            "club-celest-animation.mp4"
         ],
         "icon": "icon.svg"
     },
@@ -202,16 +202,16 @@ export const projects = [
         "images": [
             ["web-1080-mockups-mobiles.mp4",
                 "web-1080-mockups-mobiles-2.mp4"],
-            "web-1920-all-over-mobiles 2_1.mp4",
+            "mobiles-defilants.mp4",
             ["web-1080-all-over-1.mp4",
                 "web-1080-all-over-2.mp4"],
-            "web-1920-tryptique-horizontal.mp4",
+            "desktops-defilants.mp4",
             ["web-1080-mobile-seul-2_2.mp4",
                 "web-1080-mobile-seul.mp4"],
             ["web-1080-paysage-1.mp4",
                 "web-1080-paysage-2.mp4",
                 "web-1080-paysage-3.mp4"],
-            "web-1920-all-over-2.mp4",
+            "desktop-fullscreen.mp4",
             ["rs-carre-1.png",
                 "rs-carre.png"],
             "rs-paysage.png"

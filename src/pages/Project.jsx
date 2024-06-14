@@ -97,13 +97,13 @@ export function Project() {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
                                                             <LazyLoad offset={100}>
-                                                                <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
+                                                                <video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
                                                             </LazyLoad>
                                                         </figure>
                                             } else {
                                                 return <figure key={subIndex}>
                                                             <LazyLoad offset={100}>
-                                                                <img preload="auto" src={"./images/" + id + "/" + subItem} />
+                                                                <img src={"./images/" + id + "/" + subItem} />
                                                             </LazyLoad>
                                                         </figure>
                                             }
@@ -114,13 +114,13 @@ export function Project() {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
                                                     <LazyLoad offset={100}>
-                                                        <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
+                                                        <video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
                                                     </LazyLoad>
                                                 </figure>
                                     } else {
                                         return <figure key={index}>
                                                 <LazyLoad offset={100}>
-                                                    <img preload="auto" src={"./images/" + id + "/" + item} />
+                                                    <img src={"./images/" + id + "/" + item} />
                                                 </LazyLoad>
                                             </figure>
                                     }

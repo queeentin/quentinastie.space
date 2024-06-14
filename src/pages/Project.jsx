@@ -42,6 +42,12 @@ export function Project() {
                         video.loop = true;
                         video.playsinline = true;
                         video.muted = true;
+                        element.addEventListener('error', () => {
+                            const errorMessage = document.createElement('div');
+                            errorMessage.textContent = 'Erreur de chargement de la vidéo.';
+                            errorMessage.classList.add('error-message');
+                            entry.target.appendChild(errorMessage);
+                        });
                         video.addEventListener('loadeddata', () => {
                             entry.target.classList.add('is-visible');
                         });

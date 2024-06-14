@@ -28,7 +28,7 @@ export function Project() {
         const observerOptions = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.9
+            threshold: 0.5
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
@@ -46,10 +46,6 @@ export function Project() {
                             video.load();
                         };
                         video.addEventListener('error', reloadVideo);
-                        // video.addEventListener('error', () => {
-                        //     console.log("erreur de chargement de la vidéo");
-                        //     entry.target.classList.add('is-visible');
-                        // });
                         video.addEventListener('loadeddata', () => {
                             entry.target.classList.add('is-visible');
                         });

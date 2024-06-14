@@ -110,7 +110,7 @@ export function Project() {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
                                                             <LazyLoad offset={100}>
-                                                                <video autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
+                                                                <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
                                                             </LazyLoad>
                                                         </figure>
                                             } else {
@@ -127,7 +127,7 @@ export function Project() {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
                                                     <LazyLoad offset={100}>
-                                                        <video autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
+                                                        <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
                                                     </LazyLoad>
                                                 </figure>
                                     } else {

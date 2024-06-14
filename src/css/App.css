@@ -270,6 +270,9 @@ body #root #content .scroller > div main .images figure img, body #root #content
   display: block;
   width: 100%;
 }
+body #root #content .scroller > div main .images > figure {
+  aspect-ratio: 3/2;
+}
 body #root #content .scroller > div main .images .inline {
   display: flex;
   flex-direction: row;

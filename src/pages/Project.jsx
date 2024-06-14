@@ -13,28 +13,15 @@ export function Project() {
 
     const { id } = useParams();
     const [project, setProject] = useState(null);
-
-    function loadVideo(videoElement, src) {
-        fetch(src)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.blob();
-            })
-            .then(blob => {
-                videoElement.src = URL.createObjectURL(blob);
-                videoElement.play();
-            })
-            .catch(error => {
-                console.error('Video loading failed:', error);
-                setTimeout(() => loadVideo(videoElement, src), 3000);
-            });
-    }
     
-    const videos = document.querySelectorAll('video[data-src]');
-    videos.forEach(video => {
-        loadVideo(video, video.dataset.src);
+    useEffect(() => {
+        const medias = document.querySelectorAll("#content img, #content video");
+        console.log(medias);
+
+        medias.forEach((element) => {
+            const media = element.src;
+            console.log(media.width, media.height);
+        });
     });
 
     useEffect(() => {
@@ -109,15 +96,15 @@ export function Project() {
                                         {item.map((subItem, subIndex) => {
                                             if (subItem.endsWith("mp4")) {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={100}>
+                                                            {/* <LazyLoad offset={100}> */}
                                                                 <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + subItem} />
-                                                            </LazyLoad>
+                                                            {/* </LazyLoad> */}
                                                         </figure>
                                             } else {
                                                 return <figure key={subIndex}>
-                                                            <LazyLoad offset={100}>
+                                                            {/* <LazyLoad offset={100}> */}
                                                                 <img src={"./images/" + id + "/" + subItem} />
-                                                            </LazyLoad>
+                                                            {/* </LazyLoad> */}
                                                         </figure>
                                             }
                                         })}
@@ -126,15 +113,15 @@ export function Project() {
                                 } else {
                                     if (item.endsWith("mp4")) {
                                         return <figure key={index}>
-                                                    <LazyLoad offset={100}>
+                                                    {/* <LazyLoad offset={100}> */}
                                                         <video preload="auto" autoPlay loop muted playsInline src={"./images/" + id + "/" + item} />
-                                                    </LazyLoad>
+                                                    {/* </LazyLoad> */}
                                                 </figure>
                                     } else {
                                         return <figure key={index}>
-                                                <LazyLoad offset={100}>
+                                                {/* <LazyLoad offset={100}> */}
                                                     <img src={"./images/" + id + "/" + item} />
-                                                </LazyLoad>
+                                                {/* </LazyLoad> */}
                                             </figure>
                                     }
                                 }

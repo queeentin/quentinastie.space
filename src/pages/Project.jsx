@@ -47,14 +47,14 @@ export function Project() {
                         };
                         video.addEventListener('error', reloadVideo);
                         video.addEventListener('loadeddata', () => {
-                            entry.target.classList.add('is-visible');
+                            entry.target.classList.add('loaded');
                         });
                         entry.target.appendChild(video);
                     } else if (entry.target.classList.contains("img")) {
                         const img = document.createElement("img");
                         img.src = src;
                         img.addEventListener('load', () => {
-                            entry.target.classList.add('is-visible');
+                            entry.target.classList.add('loaded');
                         });
                         entry.target.appendChild(img);
                     }

@@ -3,15 +3,6 @@
 @import "fontsize.css";
 @import "reset.css";
 /* Sur grands écrans */
-.lazyload {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.is-visible {
-  opacity: 1;
-}
-
 body {
   font-family: "Ductus Regular";
   height: 100vh;
@@ -264,11 +255,29 @@ body #root #content .scroller > div main .images figure {
   margin: 0;
   border-radius: 20px;
   overflow: hidden;
-  background-color: #e6e6e6;
+  animation: 2s infinite loading ease-in-out;
 }
-body #root #content .scroller > div main .images figure img, body #root #content .scroller > div main .images figure video {
+body #root #content .scroller > div main .images figure .lazyload {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+body #root #content .scroller > div main .images figure .lazyload img, body #root #content .scroller > div main .images figure .lazyload video {
   display: block;
   width: 100%;
+}
+body #root #content .scroller > div main .images figure .loaded {
+  opacity: 1;
+}
+@keyframes loading {
+  0% {
+    background-color: #fafafa;
+  }
+  50% {
+    background-color: #e6e6e6;
+  }
+  100% {
+    background-color: #fafafa;
+  }
 }
 body #root #content .scroller > div main .images > figure {
   aspect-ratio: 3/2;

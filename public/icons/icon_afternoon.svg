@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="afternoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-  <defs>
-    <style>
-      .cls-1 {
-        stroke-linecap: round;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
-    </style>
-  </defs>
   <circle class="cls-2" cx="9.999843802921532" cy="10" r="3.500156197078468"/>
   <line class="cls-1" x1="10" y1="15.5" x2="10" y2="18.5"/>
   <line class="cls-1" x1="6.767627816811" y1="14.449917984562489" x2="5.004515716890637" y2="16.877145976144675"/>

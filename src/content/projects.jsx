@@ -361,14 +361,13 @@ export const projects = [
         "images": [
             "mockup-affiches.png",
             ["animation-M.mp4",
-                "animation-D.mp4",
-                "animation-J.mp4"],
+            "animation-D.mp4",
+            "animation-J.mp4"],
             "planche-lettres.jpg",
             ["animation-01.mp4",
-                "animation-02.mp4"],
-            // "leaflet.jpg",
+            "animation-02.mp4"],
             ["image-1.png",
-                "photo-tramway-NB.jpg"],
+            "photo-tramway-NB.jpg"],
         ],
         "icon": "icon.svg"
     },
@@ -393,12 +392,35 @@ export const projects = [
             "mmmh-vilnius-02.jpg",
             "mmmh-vilnius-03.jpg",
             ["mmmh-animation.mp4",
-                "mmmh-video-01.mp4"],
+            "mmmh-video-01.mp4"],
             "mmmh-vilnius-04.jpg",
             "mmmh-vilnius-05.jpg",
             ["mmmh-video-02.mp4",
-                "mmmh-video-03.mp4"],
+            "mmmh-video-03.mp4"],
             "mmmh-vilnius-06.jpg"
+        ],
+        "icon": "icon.svg"
+    },
+    {
+        "id": "frac-bilan",
+        "title": {
+            "fr": "Frac-Arto : bilan",
+            "en": "Frac-Arto : report"
+        },
+        "date": "2024",
+        "for": "Frac-Artothèque Nouvelle-Aquitaine",
+        "informations": {
+            "fr": "blablabla",
+            "en": "blablabla"
+        },
+        "category": {
+            "fr": "Édition",
+            "en": "Book"
+        },
+        "images": [
+            "IMG_2965-retouche.jpg",
+            ["scan-02.jpg",
+            "scan-03.jpg"],
         ],
         "icon": "icon.svg"
     }
